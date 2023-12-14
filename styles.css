@@ -1,0 +1,78 @@
+header {
+  background-color: #3c6255;
+  height: 20%;
+}
+
+#gridHeader {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  background-color: blue;
+  border: 2px solid black;
+}
+
+#gridSvg {
+  display: flex;
+  grid-column: 3;
+  gap: 10px;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+/* Nav bar */
+
+#navBarGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.svgNavBar {
+  height: 20px;
+}
+
+h1 {
+  font-family: "Leckerli One", cursive;
+  color: white;
+  text-align: center;
+}
+
+/* Listes nav bar */
+
+li {
+  font-family: "Roboto Mono", monospace;
+  color: black;
+}
+
+.ulNavBar {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Footer */
+
+footer {
+  height: 20%;
+  background-color: #3c6255;
+}
+
+/* Listes footer */
+
+.ulFooter {
+  font-family: "Roboto Mono", monospace;
+  color: black;
+  background-color: #3c6255;
+}
+
+label {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+}
