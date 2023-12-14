@@ -6,17 +6,7 @@ header {
 #gridHeader {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr;
   align-items: center;
-  justify-items: center;
-  background-color: blue;
-  border: 2px solid black;
-}
-
-#gridSvg {
-  display: flex;
-  grid-column: 3;
-  gap: 10px;
 }
 
 body {
@@ -25,14 +15,30 @@ body {
 
 /* Nav bar */
 
-#navBarGrid {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .svgNavBar {
   height: 20px;
+}
+
+img.logoFs {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imgNavBar {
+  display: flex;
+  justify-content: space-around;
+  padding: 2px;
+}
+
+#navBarFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+#ulInline {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 h1 {
@@ -48,13 +54,9 @@ li {
   color: black;
 }
 
-.ulNavBar {
-  display: flex;
-  flex-direction: row;
-}
-
 ul {
   list-style-type: none;
+  padding-inline-start: 0px;
 }
 
 /* Footer */
