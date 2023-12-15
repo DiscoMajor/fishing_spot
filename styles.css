@@ -1,53 +1,55 @@
 header {
   background-color: #3c6255;
-  height: 20%;
-}
-
-#gridHeader {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  align-items: center;
 }
 
 body {
   background-color: #f9f9f9;
+  margin: 0px;
 }
 
-/* Nav bar */
+/* Grid Header nav bar images et liste */
 
-.svgNavBar {
-  height: 20px;
+#gridHeader {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
-img.logoFs {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#logoFs {
+  align-self: center;
+  justify-self: start;
+  margin: 5px;
 }
 
 #imgNavBar {
-  display: flex;
-  justify-content: space-around;
-  padding: 2px;
+  align-self: center;
+  justify-self: end;
+  margin: 5px;
 }
 
-#navBarFlex {
-  display: flex;
-  flex-direction: column;
+h1 {
+  align-self: center;
+  justify-self: center;
+  color: white;
+  font-family: "Leckerli One", cursive;
+}
+
+.svgImg {
+  height: 20px;
+  padding: 1px;
 }
 
 #ulInline {
   display: flex;
   justify-content: space-evenly;
+  background-color: #a8c1b1;
+  padding: 5px;
 }
 
-h1 {
-  font-family: "Leckerli One", cursive;
-  color: white;
-  text-align: center;
+#headerBackGroundColor {
+  background-color: #3c6255;
+  padding-bottom: 1px;
 }
-
-/* Listes nav bar */
+/* Listes stytle, couleur, typo */
 
 li {
   font-family: "Roboto Mono", monospace;
@@ -59,11 +61,15 @@ ul {
   padding-inline-start: 0px;
 }
 
-/* Footer */
+/* Bannières pages */
 
-footer {
-  height: 20%;
-  background-color: #3c6255;
+#banniereFishingSpot {
+  width: 100%;
+  background-image: url(img/banniereFs.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  margin-top: 20px;
 }
 
 /* Listes footer */
@@ -77,4 +83,11 @@ footer {
 label {
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+  height: 20%;
+  background-color: #3c6255;
 }
