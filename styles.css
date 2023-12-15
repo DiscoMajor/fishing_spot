@@ -21,9 +21,11 @@ body {
 }
 
 #imgNavBar {
+  display: flex;
   align-self: center;
   justify-self: end;
   margin: 5px;
+  gap: 3px;
 }
 
 h1 {
@@ -31,6 +33,14 @@ h1 {
   justify-self: center;
   color: white;
   font-family: "Leckerli One", cursive;
+}
+
+h3 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 1em;
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
 }
 
 .svgImg {
@@ -80,14 +90,38 @@ ul {
   background-color: #3c6255;
 }
 
-label {
-  font-family: "Roboto Mono", monospace;
-  font-weight: bold;
-}
-
 /* Footer */
 
 footer {
-  height: 20%;
   background-color: #3c6255;
+}
+
+#footerFlex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerBox1 {
+  margin: 5px;
+}
+
+.footerBox2 {
+  margin: 5px;
+}
+
+.footerBox3 {
+  display: flex;
+}
+
+.footerBox4 {
+  display: inline;
+  padding: 5px;
+}
+
+#containerbox3_4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
 }
