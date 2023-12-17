@@ -5,8 +5,13 @@ header {
 body {
   background-color: #f9f9f9;
   margin: 0px;
+  font-size: 0.9em;
 }
 
+a {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.8em;
+}
 /* Flexbox Header nav bar images et liste */
 
 #flexHeader {
@@ -168,6 +173,83 @@ h2 {
 label {
   font-family: "Roboto Mono", monospace;
   font-size: 0.8em;
+}
+
+/* Grid Formulaires Se connecter */
+
+#connexionBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  align-items: center;
+  justify-items: center;
+}
+
+#connexionh3 {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.connexionElement1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.connexionElement2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.connexionElement3 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.connexionElement4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* Bouton submit */
+.connexionElement5 {
+  grid-column: 2;
+  grid-row: 3;
+  justify-self: center;
+  align-self: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: small;
+  background-color: white;
+  border: solid 1px black;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px black;
+}
+
+button,
+input[type="submit"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* MDP oublié */
+
+.connexionElement6 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+/* background color boites formulaires */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  background-color: #a8c1b1;
 }
 
 /* Listes footer */
