@@ -12,6 +12,39 @@ a {
   font-family: "Roboto Mono", monospace;
   font-size: 0.8em;
 }
+
+h1 {
+  align-self: center;
+  justify-self: center;
+  color: white;
+  font-family: "Leckerli One", cursive;
+}
+
+h2 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.1em;
+}
+
+h3 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
+}
+
+/* Listes stytle, couleur, typo */
+
+li {
+  font-family: "Roboto Mono", monospace;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
 /* Flexbox Header nav bar images et liste */
 
 #flexHeader {
@@ -28,21 +61,6 @@ a {
 #gapImgNavBar {
   display: flex;
   gap: 10px;
-}
-
-h1 {
-  align-self: center;
-  justify-self: center;
-  color: white;
-  font-family: "Leckerli One", cursive;
-}
-
-h3 {
-  font-family: "Roboto Mono", monospace;
-  font-weight: bold;
-  font-size: 0.9em;
-  margin-block-start: 0.2em;
-  margin-block-end: 0.2em;
 }
 
 .svgImg {
@@ -125,18 +143,6 @@ h3 {
   padding: 2px;
 }
 
-/* Listes stytle, couleur, typo */
-
-li {
-  font-family: "Roboto Mono", monospace;
-  color: black;
-}
-
-ul {
-  list-style-type: none;
-  padding-inline-start: 0px;
-}
-
 /* Bannières des mes pages */
 
 /* Bannière 1ère page */
@@ -168,11 +174,6 @@ ul {
   background-color: white;
   justify-content: center;
   align-items: center;
-}
-
-h2 {
-  font-family: "Roboto Mono", monospace;
-  font-size: 1.1em;
 }
 
 /* Formulaires */
@@ -321,6 +322,7 @@ input[type="submit"] {
 }
 
 /* background color boites formulaires */
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -332,6 +334,90 @@ input[type="textarea"] {
   font-family: "Roboto Mono", monospace;
   font-size: 0.8em;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* PAGE MON COMPTE */
+
+/* Avatar et bouton pour l'avatar */
+#avatarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+#avatar {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border: solid 2px black;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+/* Bouton changement avatar */
+
+#containerButtonAvatar {
+  font-family: "Roboto Mono", monospace;
+  font-size: small;
+  background-color: white;
+  border: solid 1px black;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgb(114, 114, 114);
+  text-align: center;
+  margin: 10px;
+  width: 100px;
+}
+
+/* Bouton confirmation changements infos personnels page mon compte */
+
+#containerButtonChangementInfoPerso {
+  font-family: "Roboto Mono", monospace;
+  font-size: small;
+  background-color: white;
+  border: solid 1px black;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgb(114, 114, 114);
+  width: 93px;
+  text-align: center;
+}
+
+#ButtonChangementInfoPerso {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Formulaire changement mdp, pseudo et mail section mon compte */
+
+#monCompteFormulaireGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  align-items: center;
+  padding: 15px;
+}
+
+#monCompteFormulaireGrid input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="textarea"] {
+  width: 80%;
+  box-shadow: 5px 5px 10px rgb(114, 114, 114);
+}
+
+/* Bannière Image SEO bas de page mon compte */
+
+#banniereMonCompte {
+  width: 100%;
+  height: 100px;
+  background-image: url(img/peche_bouchon_lac.jpg);
+  background-position: center;
+  margin-bottom: 30px;
 }
 
 /* Listes footer */

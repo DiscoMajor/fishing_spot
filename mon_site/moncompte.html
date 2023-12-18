@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Fishing Spot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <header>
+    <div id="flexHeader">
+      <div id="logoFs">
+        <img src="..\mon_site\logo_fs\logo_fishing_spot.svg" alt="logo_fishing_spot" />
+      </div>
+      <h1>Fishing Spot</h1>
+
+      <div id="gapImgNavBar">
+        <img class="svgImg" src="..\mon_site\icones\louperecherche_ico.svg" alt="search" />
+        <img class="svgImg" src="..\mon_site\icones\favoris_ico.svg" alt="favoris" />
+        <img class="svgImg" src="..\mon_site\icones\mon_compte_ico.svg" alt="mon compte" />
+      </div>
+    </div>
+
+    <div id="headerBackGroundColor">
+      <div id="navBarFlex">
+        <nav>
+          <ul id="ulInline">
+            <li>Occasions</li>
+            <li>Carte</li>
+            <li>Actualités</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="banniereHautDePage">
+    <div class="titreBannierePages">
+      <h2 class="h2BannierePages">MON COMPTE</h2>
+    </div>
+  </div>
+
+  <div id="avatarContainer">
+    <div id="avatar">
+      <img src="..\mon_site\img\avatar1.png" alt="avatar1" />
+    </div>
+    <div id="containerButtonAvatar">
+      <button>Changer mon avatar</button>
+    </div>
+  </div>
+
+  <form action="page.php" method="post">
+    <div id="monCompteFormulaireGrid">
+      <div class="formulaireElement1">
+        <label for="pseudoMonCompte">Changer de pseudo</label>
+      </div>
+      <div class="formulaireElement2">
+        <input type="text" placeholder="Votre pseudo" name="pseudoMonCompte" />
+      </div>
+      <div class="formulaireElement3">
+        <label for="pseudoConfirm">Changer de mot de passe</label>
+      </div>
+      <div class="formulaireElement4">
+        <input type="password" placeholder="Nouveau mot de passe" name="pseudoConfirm" />
+      </div>
+      <div class="formulaireElement5">
+        <label for="password">Confirmer le mot de passe</label>
+      </div>
+      <div class="formulaireElement6">
+        <input type="password" placeholder="Confirmez nouveau mot de passe" name="passwordMonCompte" />
+      </div>
+      <div class="formulaireElement7">
+        <label for="emailMonCompte">Changer votre email</label>
+      </div>
+      <div class="formulaireElement8">
+        <input type="email" placeholder="Votre nouvel email" name="emailMonCompte" />
+      </div>
+    </div>
+
+    <div id="ButtonChangementInfoPerso">
+      <div id="containerButtonChangementInfoPerso">
+        <input type="submit" value="Confirmer" />
+      </div>
+    </div>
+  </form>
+
+  <div id="banniereMonCompte"></div>
+
+  <footer>
+    <div id="footerFlex">
+      <div class="footerBox1">
+        <ul>
+          <h3>Legal</h3>
+          <li class="liFooter">CGU</li>
+          <li class="liFooter">CGV</li>
+          <li class="liFooter">Donées personnelles</li>
+        </ul>
+      </div>
+      <div class="footerBox2">
+        <ul class="ulFooter">
+          <h3>Informations</h3>
+          <li class="liFooter">Contact</li>
+          <li class="liFooter">Mon compte</li>
+          <li class="liFooter">Actualités</li>
+        </ul>
+      </div>
+      <div id="containerbox3_4">
+        <div class="footerBox3">
+          <img src="..\mon_site\logo_fs\logo_fishing_spot.svg" alt="logo_fishing_spot" />
+        </div>
+        <div class="footerBox4">
+          <img class="svgImg" src="..\mon_site\icones\insta_ico.svg" alt="" />
+          <img class="svgImg" src="..\mon_site\icones\twitter_ico.svg" alt="favoris_ico.svg" />
+          <img class="svgImg" src="..\mon_site\icones\fb_ico.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  <body></body>
+</html>
