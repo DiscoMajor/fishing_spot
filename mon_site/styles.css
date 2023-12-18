@@ -63,11 +63,18 @@ h3 {
 }
 
 /* MAP LEAFLET */
+#mapdisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #map {
-  height: 300px;
   background-color: #adf0d8;
   margin: 15px;
+  height: 750px;
+  width: 750px;
+  border: 2px solid black;
 }
 
 /* En savoir plus box + button */
