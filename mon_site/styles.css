@@ -436,6 +436,43 @@ input[type="textarea"] {
 
 /* Page Actualités */
 
+#actuGridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  background-color: rgb(161, 170, 179);
+  border: solid 1px rgb(16, 18, 19);
+  height: 600px;
+  padding: 20px;
+  gap: 30px;
+}
+
+.actuBoxes1 {
+  border: solid 1px rgb(31, 10, 10);
+  background-color: rgb(115, 187, 121);
+  grid-column: 1 / span 2;
+}
+
+.actuBoxes2 {
+  border: solid 1px rgb(238, 21, 21);
+  background-color: rgb(169, 53, 247);
+  grid-row: 1;
+  grid-column: 3 / span 2;
+}
+
+.actuBoxes3 {
+  border: solid 1px rgb(122, 252, 90);
+  background-color: rgb(24, 23, 95);
+  grid-row: 2;
+  grid-column: 1 / span 2;
+}
+
+.actuBoxes4 {
+  border: solid 1px rgb(224, 81, 193);
+  background-color: rgb(39, 200, 240);
+  grid-row: 2;
+  grid-column: 3 / span 2;
+}
 /* Footer */
 
 footer {
