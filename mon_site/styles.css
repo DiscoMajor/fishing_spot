@@ -6,37 +6,35 @@ body {
   background-color: #f9f9f9;
   margin: 0px;
   font-size: 0.9em;
+  font-family: "Roboto Mono", monospace;
 }
 
 a {
-  font-family: "Roboto Mono", monospace;
+
   font-size: 0.8em;
 }
 
 h1 {
   align-self: center;
-  justify-self: center;
   color: white;
   font-family: "Leckerli One", cursive;
 }
 
 h2 {
-  font-family: "Roboto Mono", monospace;
   font-size: 1.1em;
 }
 
 h3 {
-  font-family: "Roboto Mono", monospace;
+
   font-weight: bold;
   font-size: 0.9em;
-  margin-block-start: 0.2em;
-  margin-block-end: 0.2em;
+  margin-block-start: 0em;
+  margin-block-end: 0;
 }
 
 /* Listes stytle, couleur, typo */
 
 li {
-  font-family: "Roboto Mono", monospace;
   color: black;
 }
 
@@ -51,12 +49,9 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
 }
 
-#logoFs {
-  height: 40px;
-}
 
 #gapImgNavBar {
   display: flex;
@@ -87,12 +82,21 @@ ul {
   align-items: center;
 }
 
+
 #map {
-  background-color: #adf0d8;
   margin: 15px;
   height: 750px;
   width: 750px;
   border: 2px solid black;
+}
+
+/* Media Queries Carte */
+
+@media only screen and (max-width: 700px){
+  #map {
+    height: 350px;
+    width: 350px;
+ }
 }
 
 /* En savoir plus box + button */
@@ -147,13 +151,12 @@ ul {
 
 /* Bannière 1ère page */
 
-#banniereFishingSpot {
-  width: 100%;
+#banniereFishingSpot img {
   height: 100px;
   margin-top: 20px;
-  background-image: url(img/banniereFs.jpg);
-  background-position: center;
-  background-size: cover;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
 }
 /* Bannières des autres pages */
 
@@ -179,7 +182,6 @@ ul {
 /* Formulaires */
 
 label {
-  font-family: "Roboto Mono", monospace;
   font-size: 0.8em;
 }
 
@@ -229,7 +231,6 @@ label {
 .connexionElement5 {
   grid-column: 2;
   grid-row: 3;
-  font-family: "Roboto Mono", monospace;
   font-size: small;
   background-color: white;
   border: solid 1px black;
@@ -332,7 +333,6 @@ input[type="textarea"] {
   padding: 10px;
   font-family: "Roboto Mono", monospace;
   font-size: 0.8em;
-  width: 80%;
   box-shadow: 5px 5px 10px rgb(114, 114, 114);
 }
 
@@ -359,7 +359,7 @@ input[type="textarea"] {
 /* Bouton changement avatar */
 
 #containerButtonAvatar {
-  font-family: "Roboto Mono", monospace;
+
   font-size: small;
   background-color: white;
   border: solid 1px black;
@@ -374,7 +374,7 @@ input[type="textarea"] {
 /* Bouton confirmation changements infos personnels page mon compte */
 
 #containerButtonChangementInfoPerso {
-  font-family: "Roboto Mono", monospace;
+
   font-size: small;
   background-color: white;
   border: solid 1px black;
@@ -402,18 +402,6 @@ input[type="textarea"] {
   padding: 15px;
 }
 
-#monCompteFormulaireGrid input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="textarea"] {
-  width: 80%;
-  box-shadow: 5px 5px 10px rgb(114, 114, 114);
-  background-color: #a8c1b1;
-  border: 0;
-  padding: 10px;
-  font-family: "Roboto Mono", monospace;
-  font-size: 0.8em;
-}
 
 /* Bannière Image SEO bas de page mon compte */
 
@@ -425,14 +413,6 @@ input[type="textarea"] {
   margin-bottom: 30px;
 }
 
-/* Listes footer */
-
-.ulFooter {
-  font-family: "Roboto Mono", monospace;
-  color: black;
-  background-color: #3c6255;
-}
-
 /* Footer */
 
 footer {
@@ -442,18 +422,7 @@ footer {
 #footerFlex {
   display: flex;
   justify-content: space-around;
-}
-
-.footerBox1 {
-  margin: 5px;
-}
-
-.footerBox2 {
-  margin: 5px;
-}
-
-.footerBox3 {
-  display: flex;
+  padding: 5px;
 }
 
 .footerBox4 {
@@ -471,4 +440,7 @@ footer {
 
 .liFooter {
   font-size: 0.8em;
+  margin-top: 5px;
 }
+
+
