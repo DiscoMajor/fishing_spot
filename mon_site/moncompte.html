@@ -52,19 +52,19 @@
   
     <form action="page.php" method="post">
       <div id="monCompteFlexBox">
-        <div id="monCompteGrid">
+            <div id="flexBoxLabels">
               <label  for="pseudoMonCompte">Changer de pseudo</label>
-              <input type="text" placeholder="Votre pseudo" name="pseudoMonCompte" />
-            
               <label for="pseudoConfirm">Changer de mot de passe</label>
-              <input type="password" placeholder="Nouveau mot de passe" name="pseudoConfirm" />
-            
               <label  for="password">Confirmer le mot de passe</label>
-              <input   type="password" placeholder="Confirmation" name="passwordMonCompte" />
-
               <label for="emailMonCompte">Changer votre email</label>
+            </div>
+
+            <div id="flexBoxInputs">
+              <input type="text" placeholder="Votre pseudo" name="pseudoMonCompte" />
+              <input type="password" placeholder="Nouveau mot de passe" name="pseudoConfirm" />
+              <input   type="password" placeholder="Confirmation" name="passwordMonCompte" />
               <input type="email" placeholder="Nouvel email" name="emailMonCompte" />
-        </div>
+            </div>
       </div>
   </form>
 

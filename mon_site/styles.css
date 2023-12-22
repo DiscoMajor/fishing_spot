@@ -9,14 +9,56 @@ body {
 }
 
 a {
-
   font-size: 0.8em;
 }
 
-h1 {
+/* Titre header H1 "Fishing spot" */
+
+header h1 {
   align-self: center;
   color: white;
   font-family: "Leckerli One", cursive;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* Responsive Titre header H1 "Fishing spot" */
+
+@media only screen and (min-width: 510px) {
+  header h1 {
+    font-size: 3em;
+  }
+}
+
+/* Flexbox Header nav bar images et liste */
+
+#flexHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Icones et logo du header */
+
+#gapImgNavBar {
+  display: flex;
+  gap: 10px;
+}
+
+#logoFs img {
+  height: 80px;
+}
+
+/* Responsive Logo header et icones gap */
+
+@media only screen and (max-width: 510px) {
+  #gapImgNavBar {
+    gap: 3px;
+  }
+  #logoFs img {
+    height: 60px;
+  }
 }
 
 h2 {
@@ -24,7 +66,6 @@ h2 {
 }
 
 h3 {
-
   font-weight: bold;
   font-size: 0.9em;
   margin-block-start: 0em;
@@ -42,20 +83,7 @@ ul {
   padding-inline-start: 0px;
 }
 
-/* Flexbox Header nav bar images et liste */
-
-#flexHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-
-#gapImgNavBar {
-  display: flex;
-  gap: 10px;
-}
+/* Logo Fishing Spot bannière */
 
 .svgImg {
   height: 20px;
@@ -81,7 +109,6 @@ ul {
   align-items: center;
 }
 
-
 #map {
   margin: 15px;
   height: 750px;
@@ -91,11 +118,11 @@ ul {
 
 /* Media Queries Carte */
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   #map {
     height: 350px;
     width: 350px;
- }
+  }
 }
 
 /* En savoir plus box + button */
@@ -258,10 +285,11 @@ input[type="submit"] {
   outline: inherit;
 }
 
-@media only screen and (max-width: 500px){
-  #connexionBox,#registerBox {
-    gap : 5px;
- }
+@media only screen and (max-width: 500px) {
+  #connexionBox,
+  #registerBox {
+    gap: 5px;
+  }
 }
 
 /* Formulaire création de compte */
@@ -279,7 +307,6 @@ input[type="submit"] {
 .resgisteritem5 {
   justify-self: start;
 }
-
 
 /* Submit button register form */
 .resgisteritem7 {
@@ -331,7 +358,6 @@ input[type="textarea"] {
 /* Bouton changement avatar */
 
 #containerButtonAvatar {
-
   font-size: small;
   background-color: white;
   border: solid 1px black;
@@ -346,7 +372,6 @@ input[type="textarea"] {
 /* Bouton confirmation changements infos personnels page mon compte */
 
 #containerButtonChangementInfoPerso {
-
   font-size: small;
   background-color: white;
   border: solid 1px black;
@@ -365,33 +390,39 @@ input[type="textarea"] {
 
 /* Formulaires MON COMPTE */
 
-
 #monCompteFlexBox {
   display: flex;
-  justify-content: center;
-}
-
-#monCompteGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 20px;
+  flex-direction: row;
+  justify-content: space-evenly;
   padding: 20px;
-  justify-items: start;
 }
 
-
-
-@media only screen and (max-width: 500px){
-  #monCompteGrid  {
-    gap : 10px;
- }
- #monCompteGrid label {
-  font-size: 0.78em;
- }
+#flexBoxLabels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
 }
 
+#flexBoxInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+@media only screen and (max-width: 500px) {
+  #flexBoxLabels label {
+    font-size: 0.78em;
+    gap: 0px;
+  }
+  #flexBoxInputs {
+    gap: 10px;
+  }
+  #monCompteFlexBox {
+    gap: 10px;
+    padding: 10px;
+  }
+}
 
 /* Bannière Image SEO bas de page mon compte */
 
@@ -402,6 +433,8 @@ input[type="textarea"] {
   background-position: center;
   margin-bottom: 30px;
 }
+
+/* Page Actualités */
 
 /* Footer */
 
@@ -433,4 +466,17 @@ footer {
   margin-top: 5px;
 }
 
-
+@media only screen and (max-width: 510px) {
+  .liFooter {
+    font-size: 0.7em;
+  }
+  footer h3 {
+    font-size: 0.7em;
+  }
+  .footerBox3 img {
+    height: 55px;
+  }
+  .footerBox4 {
+    padding: 0;
+  }
+}
