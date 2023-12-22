@@ -473,6 +473,41 @@ input[type="textarea"] {
   grid-row: 2;
   grid-column: 3 / span 2;
 }
+
+/* Page Articles */
+
+#articlesGridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: rgb(176, 210, 245);
+  border: solid 1px rgb(16, 18, 19);
+  padding: 20px;
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+#articlesGridContainer p {
+  text-align: center;
+  text-align: justify;
+  padding: 10px;
+}
+
+#articlesGridContainer p:first-child {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#articlesGridContainer p:nth-child(even) {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+#articlesGridContainer img {
+  padding: 10px;
+}
+
 /* Footer */
 
 footer {
