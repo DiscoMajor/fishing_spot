@@ -5,7 +5,6 @@ header {
 body {
   background-color: #f9f9f9;
   margin: 0px;
-  font-size: 0.9em;
   font-family: "Roboto Mono", monospace;
 }
 
@@ -185,18 +184,18 @@ label {
   font-size: 0.8em;
 }
 
-/* Grid Formulaires Se connecter */
+/* Grid Formulaires page CONNEXION / CREER UN COMPTE */
 
 /*Formulaire de connexion */
 
 #connexionBox {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-  padding: 10px;
   align-items: center;
   justify-items: center;
+  gap: 10px;
+  padding: 10px;
+  justify-content: space-evenly;
 }
 
 .connexionh3 {
@@ -232,7 +231,6 @@ label {
   grid-column: 2;
   grid-row: 3;
   font-size: small;
-  background-color: white;
   border: solid 1px black;
   padding: 5px;
   border-radius: 8px;
@@ -245,9 +243,8 @@ label {
 /* MDP oublié */
 
 .connexionElement6 {
-  grid-column: 3;
-  grid-row: 3;
-  justify-self: start;
+  grid-column: 2;
+  justify-self: flex-start;
 }
 
 button,
@@ -261,58 +258,33 @@ input[type="submit"] {
   outline: inherit;
 }
 
+@media only screen and (max-width: 500px){
+  #connexionBox,#registerBox {
+    gap : 5px;
+ }
+}
+
 /* Formulaire création de compte */
 
 #registerBox {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   align-items: center;
   justify-items: center;
   gap: 10px;
   padding: 10px;
-}
-
-.resgisteritem1 {
-  grid-row: 1;
-  grid-column: 1;
-  justify-self: end;
-}
-
-.resgisteritem2 {
-  grid-row: 1;
-  grid-column: 2;
-}
-
-.resgisteritem3 {
-  grid-row: 2;
-  grid-column: 1;
-  justify-self: end;
-}
-.resgisteritem4 {
-  grid-row: 2;
-  grid-column: 2;
+  justify-content: space-evenly;
 }
 
 .resgisteritem5 {
-  grid-row: 3;
-  grid-column: 1;
-  justify-self: end;
-  margin-right: 55px;
+  justify-self: start;
 }
 
-.resgisteritem6 {
-  grid-row: 3;
-  grid-column: 2;
-}
 
 /* Submit button register form */
 .resgisteritem7 {
-  grid-row: 4;
   grid-column: 2;
-  font-family: "Roboto Mono", monospace;
   font-size: small;
-  background-color: white;
   border: solid 1px black;
   padding: 5px;
   border-radius: 8px;
@@ -391,16 +363,34 @@ input[type="textarea"] {
   padding: 20px;
 }
 
-/* Formulaire changement mdp, pseudo et mail section mon compte */
+/* Formulaires MON COMPTE */
 
-#monCompteFormulaireGrid {
+
+#monCompteFlexBox {
+  display: flex;
+  justify-content: center;
+}
+
+#monCompteGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  gap: 20px;
   align-items: center;
-  padding: 15px;
+  gap: 20px;
+  padding: 20px;
+  justify-items: start;
 }
+
+
+
+@media only screen and (max-width: 500px){
+  #monCompteGrid  {
+    gap : 10px;
+ }
+ #monCompteGrid label {
+  font-size: 0.78em;
+ }
+}
+
 
 
 /* Bannière Image SEO bas de page mon compte */

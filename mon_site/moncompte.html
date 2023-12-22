@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <title>Fishing Spot</title>
+    <title>Fishing Spot - Mon Compte</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <header>
@@ -49,33 +49,25 @@
     </div>
   </div>
 
-  <form action="page.php" method="post">
-    <div id="monCompteFormulaireGrid">
-      <div class="formulaireElement1">
-        <label for="pseudoMonCompte">Changer de pseudo</label>
+  
+    <form action="page.php" method="post">
+      <div id="monCompteFlexBox">
+        <div id="monCompteGrid">
+              <label  for="pseudoMonCompte">Changer de pseudo</label>
+              <input type="text" placeholder="Votre pseudo" name="pseudoMonCompte" />
+            
+              <label for="pseudoConfirm">Changer de mot de passe</label>
+              <input type="password" placeholder="Nouveau mot de passe" name="pseudoConfirm" />
+            
+              <label  for="password">Confirmer le mot de passe</label>
+              <input   type="password" placeholder="Confirmation" name="passwordMonCompte" />
+
+              <label for="emailMonCompte">Changer votre email</label>
+              <input type="email" placeholder="Nouvel email" name="emailMonCompte" />
+        </div>
       </div>
-      <div class="formulaireElement2">
-        <input type="text" placeholder="Votre pseudo" name="pseudoMonCompte" />
-      </div>
-      <div class="formulaireElement3">
-        <label for="pseudoConfirm">Changer de mot de passe</label>
-      </div>
-      <div class="formulaireElement4">
-        <input type="password" placeholder="Nouveau mot de passe" name="pseudoConfirm" />
-      </div>
-      <div class="formulaireElement5">
-        <label for="password">Confirmer le mot de passe</label>
-      </div>
-      <div class="formulaireElement6">
-        <input type="password" placeholder="Confirmation" name="passwordMonCompte" />
-      </div>
-      <div class="formulaireElement7">
-        <label for="emailMonCompte">Changer votre email</label>
-      </div>
-      <div class="formulaireElement8">
-        <input type="email" placeholder="Nouvel email" name="emailMonCompte" />
-      </div>
-    </div>
+  </form>
+
 
     <div id="ButtonChangementInfoPerso">
       <div id="containerButtonChangementInfoPerso">
@@ -116,5 +108,5 @@
       </div>
     </div>
   </footer>
-  <body></body>
+</body>
 </html>
