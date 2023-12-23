@@ -3,13 +3,23 @@ header {
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: #f1f1f1;
   margin: 0px;
   font-family: "Roboto Mono", monospace;
 }
 
 a {
   font-size: 0.8em;
+}
+
+p {
+  text-align: center;
+  text-align: justify;
+}
+
+h4,
+h2 {
+  text-align: center;
 }
 
 /* Titre header H1 "Fishing spot" */
@@ -61,7 +71,7 @@ header h1 {
   }
 }
 
-h2 {
+.h2BannierePages {
   font-size: 1.1em;
 }
 
@@ -440,38 +450,82 @@ input[type="textarea"] {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
-  background-color: rgb(161, 170, 179);
-  border: solid 1px rgb(16, 18, 19);
   height: 600px;
   padding: 20px;
+  margin: 10px;
   gap: 30px;
 }
 
 .actuBoxes1 {
-  border: solid 1px rgb(31, 10, 10);
-  background-color: rgb(115, 187, 121);
   grid-column: 1 / span 2;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
 }
 
 .actuBoxes2 {
-  border: solid 1px rgb(238, 21, 21);
-  background-color: rgb(169, 53, 247);
   grid-row: 1;
   grid-column: 3 / span 2;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
 }
 
 .actuBoxes3 {
-  border: solid 1px rgb(122, 252, 90);
-  background-color: rgb(24, 23, 95);
   grid-row: 2;
   grid-column: 1 / span 2;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
 }
 
 .actuBoxes4 {
-  border: solid 1px rgb(224, 81, 193);
-  background-color: rgb(39, 200, 240);
   grid-row: 2;
   grid-column: 3 / span 2;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.actuImgFlexBox {
+  display: flex;
+  align-items: center;
+}
+.actuTexteFlexBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+/*  Hr (trait noir sous articles) */
+
+#actuGridContainer hr {
+  border: solid 1px black;
+  width: 200px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #actuGridContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .actuBoxes1,
+  .actuBoxes2,
+  .actuBoxes3,
+  .actuBoxes4 {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
 }
 
 /* Page Articles */
@@ -489,8 +543,6 @@ input[type="textarea"] {
 }
 
 #articlesGridContainer p {
-  text-align: center;
-  text-align: justify;
   padding: 10px;
 }
 
