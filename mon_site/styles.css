@@ -220,7 +220,7 @@ label {
   font-size: 0.8em;
 }
 
-/* Grid Formulaires page CONNEXION / CREER UN COMPTE */
+/* Grid Formulaires page CONNEXION / CREER UN COMPTE / Mon compte */
 
 /*Formulaire de connexion */
 
@@ -273,7 +273,7 @@ label {
   box-shadow: 5px 5px 10px rgb(114, 114, 114);
   width: 95px;
   text-align: center;
-  margin-right: 65px;
+  margin-right: 80px;
 }
 
 /* MDP oublié */
@@ -295,8 +295,7 @@ input[type="submit"] {
 }
 
 @media only screen and (max-width: 500px) {
-  #connexionBox,
-  #registerBox {
+  #connexionBox {
     gap: 5px;
   }
 }
@@ -327,7 +326,7 @@ input[type="submit"] {
   box-shadow: 5px 5px 10px rgb(114, 114, 114);
   width: 93px;
   text-align: center;
-  margin-right: 65px;
+  margin-right: 80px;
   margin-bottom: 10px;
 }
 
@@ -343,6 +342,12 @@ input[type="textarea"] {
   font-family: "Roboto Mono", monospace;
   font-size: 0.8em;
   box-shadow: 5px 5px 10px rgb(114, 114, 114);
+}
+
+@media only screen and (max-width: 500px) {
+  #registerBox {
+    gap: 5px;
+  }
 }
 
 /* PAGE MON COMPTE */
@@ -578,7 +583,7 @@ input[type="textarea"] {
   padding: 10px;
 }
 
-/* A REVOIR !!!!! */
+/* MEDIA QUERIES PAGE ARTICLES */
 
 @media only screen and (max-width: 1300px) {
   #articlesGridContainer {
@@ -656,6 +661,14 @@ input[type="textarea"] {
   h2 {
     font-size: 1.3em;
   }
+}
+
+/* Page CONTACT */
+
+#containerContactGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
 }
 
 /* Footer */
