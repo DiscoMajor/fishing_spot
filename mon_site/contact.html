@@ -38,27 +38,37 @@
       </div>
     </header>
 
-    <h4>Merci de bien vouloir renseigner vos informations avant de nous laisser un message.</h4>
-
-    <form action="">
-      <div id="containerContactGrid">
-        <label for="text">Nom *</label>
-        <input type="text" />
-        <label for="email">E-mail *</label>
-        <input type="email" />
-        <textarea id="boxdialogue" name="messagePerso" rows="5" cols="33">
-            Merci de nous écrire votre message ici
-            </textarea
-        >
-        <input type="submit" />
-      </div>
-    </form>
-
     <div class="banniereHautDePage">
       <div class="titreBannierePages">
         <h2 class="h2BannierePages">CONTACT</h2>
       </div>
     </div>
+
+    <h4 class="h4MediaQ">Merci de bien vouloir renseigner vos informations avant de nous laisser un message.</h4>
+
+    <form class="contactFormMediaQ" action="">
+      <div id="containerContactGrid">
+        <div id="contactBoxFlex">
+          <div id="contactElement1">
+            <label for="text">Nom *</label>
+            <input type="text" />
+          </div>
+          <div id="contactElement2">
+            <label for="email">E-mail *</label>
+            <input type="email" />
+          </div>
+          <div id="contactElement3">
+            <textarea id="boxdialogue" name="messagePerso" rows="12" cols="44">Veuillez écrire votre message ici</textarea>
+
+            <div id="boutonContact">
+              <button type="submit">Envoyer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div id="banniereContact"><img src="" alt="" /></div>
 
     <footer>
       <div id="footerFlex">
