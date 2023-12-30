@@ -283,6 +283,8 @@ label {
   justify-self: flex-start;
 }
 
+/* Button type */
+
 button,
 input[type="submit"] {
   background: none;
@@ -671,6 +673,7 @@ input[type="textarea"] {
   justify-items: center;
   padding: 20px;
 }
+
 #contactBoxFlex {
   display: flex;
   flex-direction: column;
@@ -689,6 +692,12 @@ input[type="textarea"] {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+
+/* Text Area */
+
+textarea {
+  resize: none;
 }
 
 /* Div du Bouton envoyer page contact  */
@@ -720,6 +729,7 @@ input[type="textarea"] {
   .h4MediaQ {
     padding: 10px;
     font-size: small;
+    text-align: center;
   }
   #contactElement3 {
     padding: 10px;
@@ -734,6 +744,25 @@ input[type="textarea"] {
   #containerContactGrid textarea {
     resize: none;
   }
+}
+
+/* Défferents buttons hover */
+
+.connexionElement5:hover,
+.resgisteritem7:hover,
+#boutonContact:hover,
+.boutonLac:hover,
+#containerButtonAvatar:hover,
+#containerButtonChangementInfoPerso:hover {
+  border: solid 1px #3c6255;
+  color: #3c6255;
+}
+
+/* Page Maintenance */
+#gifSmilingFish {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 /* Footer */
