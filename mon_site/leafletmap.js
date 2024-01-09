@@ -8,21 +8,32 @@ const tiles = L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager
   maxZoom: 20,
 }).addTo(map);
 
+// Red marker ICON (ping on the map)
+
 var redPin = L.icon({
   iconUrl: "location_leaflet.png",
-  iconSize: [50, 50], // size of the icon
-  iconAnchor: [28, 90], // point of the icon which will correspond to marker's location
+  iconSize: [40, 40], // size of the icon
+  iconAnchor: [24, 90], // point of the icon which will correspond to marker's location
   popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
 });
+
+// Markers on my map + Pop Up with informations
 
 L.marker([43.526107, 1.285239], { icon: redPin })
   .addTo(map)
   .bindPopup(
-    "<div><img class='coucou' src='https://picsum.photos/200'></div> <div class='jsaispas'> <h3>Petit Lac De Bidot</h3> <p>Fonsorbes</p> <input type='submit' id='button'></div>"
-  )
-  .openPopup();
-L.marker([43.584188, 1.358444], { icon: redPin }).addTo(map).bindPopup("<h3>Lac du vieux Pigeonnier</h3> <p>Tournefeuille</p>").openPopup();
-L.marker([43.537343, 1.514988], { icon: redPin }).addTo(map).bindPopup("<h3>Lac de Labège</h3> <p>Labège</p>").openPopup();
+    "<div><img class='imgPopUpLeaftlet' src='https://picsum.photos/100/100'></div> <div class='textAndButtonInsidePopUpLeaflet'> <h3>Petit Lac De Bidot</h3> <p>Fonsorbes</p> <input type='submit' id='buttonLeafLetMap'> </div>"
+  );
+L.marker([43.584188, 1.358444], { icon: redPin })
+  .addTo(map)
+  .bindPopup(
+    "<div><img class='imgPopUpLeaftlet' src='https://picsum.photos/100/100'></div> <div class='textAndButtonInsidePopUpLeaflet'> <h3>Lac du vieux Pigeonnier</h3> <p>Tournefeuille</p> <input type='submit' id='buttonLeafLetMap'> </div>"
+  );
+L.marker([43.537343, 1.514988], { icon: redPin })
+  .addTo(map)
+  .bindPopup(
+    "<div><img class='imgPopUpLeaftlet' src='https://picsum.photos/100/100'></div> <div class='textAndButtonInsidePopUpLeaflet'> <h3>Lac de Labège</h3> <p>Labège</p> <input type='submit' id='buttonLeafLetMap'> </div>"
+  );
 
 /* const tiles = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}", {
   attribution:
