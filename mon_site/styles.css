@@ -879,7 +879,7 @@ footer {
 
 .leaflet-popup-content h3 {
   font-weight: 700;
-  color: #1c87c9;
+  color: #3c6255;
 }
 
 /* Images sizes map pop up */
@@ -904,6 +904,8 @@ footer {
   align-items: center;
 }
 
+/* Button leafletMap Pop Up */
+
 #buttonLeafLetMap {
   border: solid 1px #3c6255;
   font-size: small;
@@ -915,6 +917,7 @@ footer {
   width: 93px;
   text-align: center;
 }
+/* Button leafletMap Pop Up HOVER  */
 
 #buttonLeafLetMap:hover {
   border: solid 1px #3c6255;
