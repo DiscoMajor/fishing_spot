@@ -1,0 +1,176 @@
+/* Media Queries Carte */
+
+@media only screen and (max-width: 700px) {
+  #map {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+/* MQ box connexion and register */
+
+@media only screen and (max-width: 500px) {
+  #connexionBox {
+    gap: 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #registerBox {
+    gap: 5px;
+  }
+}
+
+/* MediaQueries My account Forms */
+
+@media only screen and (max-width: 500px) {
+  #flexBoxLabels label {
+    font-size: 0.78em;
+    gap: 0px;
+  }
+  #flexBoxInputs {
+    gap: 10px;
+  }
+  #monCompteFlexBox {
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+/* MEDIA QUERIES PAGE ARTICLES */
+
+@media only screen and (max-width: 1300px) {
+  #articlesGridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .hrArtcile {
+    width: 500px;
+    margin-bottom: 10px;
+  }
+  #articlesGridContainer p {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  #articlesGridContainer p:nth-child(2) {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  #articlesGridContainer img {
+    grid-row: 2;
+    grid-column: 1;
+    padding: 10px;
+  }
+
+  #articlesGridContainer img:last-child {
+    grid-row: 4;
+    grid-column: 1;
+    padding: 10px;
+  }
+  #articlesGridContainer p {
+    padding: 20px;
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  #articlesGridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 0.6fr);
+    gap: 0;
+  }
+  .hrArtcile {
+    width: 250px;
+    margin: auto;
+  }
+  #articlesGridContainer p {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  #articlesGridContainer p:nth-child(2) {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  #articlesGridContainer img {
+    grid-row: 2;
+    grid-column: 1;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+  }
+
+  #articlesGridContainer img:last-child {
+    grid-row: 4;
+    grid-column: 1;
+    padding: 10px;
+  }
+  #articlesGridContainer p {
+    padding: 30px;
+    font-size: 0.8em;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+}
+
+/* MediaQueries page contact pour formulaire et textes */
+
+@media only screen and (max-width: 675px) {
+  .h4MediaQ {
+    padding: 10px;
+    font-size: small;
+    text-align: center;
+  }
+  #contactElement3 {
+    padding: 10px;
+    gap: 10px;
+  }
+  #containerContactGrid {
+    padding: 0;
+  }
+  .contactFormMediaQ {
+    padding: 10px;
+  }
+  #containerContactGrid textarea {
+    resize: none;
+  }
+}
+
+/* MQ occasions texte */
+
+@media only screen and (max-width: 675px) {
+  .displayFlexTitreOccasions {
+    padding: 20px;
+  }
+}
+
+/*Media queries page actualités */
+
+@media only screen and (max-width: 1200px) {
+  #actuGridContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  #actuGridContainer p {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .actuBoxes1,
+  .actuBoxes2,
+  .actuBoxes3,
+  .actuBoxes4 {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  #actuGridContainer p {
+    font-size: 0.8em;
+    padding: 10px;
+  }
+}

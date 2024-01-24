@@ -1,116 +1,3 @@
-header {
-  background-color: #3c6255;
-}
-
-body {
-  background-color: #f1f1f1;
-  margin: 0px;
-  font-family: "Roboto Mono", monospace;
-}
-
-a {
-  font-size: 0.8em;
-}
-
-p {
-  text-align: center;
-  text-align: justify;
-}
-
-h4,
-h2 {
-  text-align: center;
-}
-
-/* Titre header H1 "Fishing spot" */
-
-header h1 {
-  align-self: center;
-  color: white;
-  font-family: "Leckerli One", cursive;
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-
-/* Responsive Titre header H1 "Fishing spot" */
-
-@media only screen and (min-width: 510px) {
-  header h1 {
-    font-size: 3em;
-  }
-}
-
-/* Flexbox Header nav bar images et liste */
-
-#flexHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-/* Icones et logo du header */
-
-#gapImgNavBar {
-  display: flex;
-  gap: 10px;
-}
-
-#logoFs img {
-  height: 80px;
-}
-
-/* Responsive Logo header et icones gap */
-
-@media only screen and (max-width: 510px) {
-  #gapImgNavBar {
-    gap: 3px;
-  }
-  #logoFs img {
-    height: 60px;
-  }
-}
-
-.h2BannierePages {
-  font-size: 1.1em;
-}
-
-h3 {
-  font-size: 0.9em;
-  margin-block-start: 0em;
-  margin-block-end: 0;
-}
-
-/* Listes stytle, couleur, typo */
-
-li {
-  color: black;
-}
-
-ul {
-  list-style-type: none;
-  padding-inline-start: 0px;
-}
-
-/* Logo Fishing Spot bannière */
-
-.svgImg {
-  height: 20px;
-  padding: 1px;
-}
-
-#ulInline {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #a8c1b1;
-  padding: 5px;
-}
-
-#headerBackGroundColor {
-  background-color: #3c6255;
-  padding-bottom: 1px;
-}
-
 /* MAP LEAFLET */
 #mapdisplay {
   display: flex;
@@ -123,15 +10,6 @@ ul {
   height: 750px;
   width: 750px;
   border: 2px solid black;
-}
-
-/* Media Queries Carte */
-
-@media only screen and (max-width: 700px) {
-  #map {
-    height: 350px;
-    width: 350px;
-  }
 }
 
 /* En savoir plus box + button */
@@ -297,12 +175,6 @@ input[type="submit"] {
   outline: inherit;
 }
 
-@media only screen and (max-width: 500px) {
-  #connexionBox {
-    gap: 5px;
-  }
-}
-
 /* Formulaire création de compte */
 
 #registerBox {
@@ -345,12 +217,6 @@ input[type="textarea"] {
   font-family: "Roboto Mono", monospace;
   font-size: 0.8em;
   box-shadow: 5px 5px 10px rgb(114, 114, 114);
-}
-
-@media only screen and (max-width: 500px) {
-  #registerBox {
-    gap: 5px;
-  }
 }
 
 /* PAGE MON COMPTE */
@@ -428,20 +294,6 @@ input[type="textarea"] {
   gap: 20px;
 }
 
-@media only screen and (max-width: 500px) {
-  #flexBoxLabels label {
-    font-size: 0.78em;
-    gap: 0px;
-  }
-  #flexBoxInputs {
-    gap: 10px;
-  }
-  #monCompteFlexBox {
-    gap: 10px;
-    padding: 10px;
-  }
-}
-
 /* Bannière Image SEO bas de page mon compte */
 
 #banniereMonCompte {
@@ -517,31 +369,6 @@ input[type="textarea"] {
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 1200px) {
-  #actuGridContainer {
-    display: flex;
-    flex-direction: column;
-  }
-  #actuGridContainer p {
-    font-size: 0.8em;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .actuBoxes1,
-  .actuBoxes2,
-  .actuBoxes3,
-  .actuBoxes4 {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-  }
-  #actuGridContainer p {
-    font-size: 0.8em;
-    padding: 10px;
-  }
-}
-
 /* Page Articles */
 
 .hrArtcile {
@@ -584,86 +411,6 @@ input[type="textarea"] {
   grid-row: 1;
   grid-column: 2;
   padding: 10px;
-}
-
-/* MEDIA QUERIES PAGE ARTICLES */
-
-@media only screen and (max-width: 1300px) {
-  #articlesGridContainer {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-  }
-  .hrArtcile {
-    width: 500px;
-    margin-bottom: 10px;
-  }
-  #articlesGridContainer p {
-    grid-row: 1;
-    grid-column: 1;
-  }
-
-  #articlesGridContainer p:nth-child(2) {
-    grid-row: 3;
-    grid-column: 1;
-  }
-
-  #articlesGridContainer img {
-    grid-row: 2;
-    grid-column: 1;
-    padding: 10px;
-  }
-
-  #articlesGridContainer img:last-child {
-    grid-row: 4;
-    grid-column: 1;
-    padding: 10px;
-  }
-  #articlesGridContainer p {
-    padding: 20px;
-    font-size: 0.8em;
-  }
-}
-
-@media only screen and (max-width: 675px) {
-  #articlesGridContainer {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 0.6fr);
-    gap: 0;
-  }
-  .hrArtcile {
-    width: 250px;
-    margin: auto;
-  }
-  #articlesGridContainer p {
-    grid-row: 1;
-    grid-column: 1;
-  }
-
-  #articlesGridContainer p:nth-child(2) {
-    grid-row: 3;
-    grid-column: 1;
-  }
-
-  #articlesGridContainer img {
-    grid-row: 2;
-    grid-column: 1;
-    padding: 10px;
-    height: 300px;
-    width: 300px;
-  }
-
-  #articlesGridContainer img:last-child {
-    grid-row: 4;
-    grid-column: 1;
-    padding: 10px;
-  }
-  #articlesGridContainer p {
-    padding: 30px;
-    font-size: 0.8em;
-  }
-  h2 {
-    font-size: 1.3em;
-  }
 }
 
 /* Page CONTACT */
@@ -724,29 +471,6 @@ textarea {
   position: relative;
 }
 
-/* MediaQueries page contact pour formulaire et textes */
-
-@media only screen and (max-width: 675px) {
-  .h4MediaQ {
-    padding: 10px;
-    font-size: small;
-    text-align: center;
-  }
-  #contactElement3 {
-    padding: 10px;
-    gap: 10px;
-  }
-  #containerContactGrid {
-    padding: 0;
-  }
-  .contactFormMediaQ {
-    padding: 10px;
-  }
-  #containerContactGrid textarea {
-    resize: none;
-  }
-}
-
 /* Défferents buttons hover */
 
 .connexionElement5:hover,
@@ -772,12 +496,6 @@ textarea {
 
 .displayFlexTitreOccasions {
   padding: 45px;
-}
-
-@media only screen and (max-width: 675px) {
-  .displayFlexTitreOccasions {
-    padding: 20px;
-  }
 }
 
 /* Carousel Occasions */
@@ -828,51 +546,6 @@ img {
   left: 0;
   z-index: 100;
   transition: left 0.65s ease-out;
-}
-
-/* Footer */
-
-footer {
-  background-color: #3c6255;
-}
-
-#footerFlex {
-  display: flex;
-  justify-content: space-around;
-  padding: 5px;
-}
-
-.footerBox4 {
-  display: inline;
-  padding: 5px;
-}
-
-#containerbox3_4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
-}
-
-.liFooter {
-  font-size: 0.8em;
-  margin-top: 5px;
-}
-
-@media only screen and (max-width: 510px) {
-  .liFooter {
-    font-size: 0.7em;
-  }
-  footer h3 {
-    font-size: 0.7em;
-  }
-  .footerBox3 img {
-    height: 55px;
-  }
-  .footerBox4 {
-    padding: 0;
-  }
 }
 
 /* Popup map mise en page */
