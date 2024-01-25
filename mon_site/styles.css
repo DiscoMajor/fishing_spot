@@ -502,8 +502,17 @@ textarea {
 
 /* CARDS */
 
+#bootstraptest {
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
+}
+
 .card-body {
   background-color: #a8c1b1;
+}
+
+.hrbootstrap {
+  margin: auto;
 }
 
 .card-text {
@@ -515,6 +524,23 @@ textarea {
   font-weight: bold;
   text-align: center;
   padding: 10px;
+  color: white;
+}
+
+.biboop {
+  padding: 10px;
+  background-color: #3c6255;
+  width: 200px;
+}
+
+.btn {
+  border: solid 1px #3c6255;
+  font-size: small;
+  background-color: white;
+  border: solid 1px black;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgb(114, 114, 114);
 }
 
 /* Popup leaflet map mise en page */
