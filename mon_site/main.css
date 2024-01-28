@@ -44,7 +44,7 @@ header h1 {
 
 /* Flexbox Header nav bar images et liste */
 
-#flexHeader {
+#flex-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,12 +53,12 @@ header h1 {
 
 /* Icones et logo du header */
 
-#gapImgNavBar {
+#gap-img-navbar {
   display: flex;
   gap: 10px;
 }
 
-#logoFs img {
+#logo-fs img {
   height: 80px;
 }
 
@@ -96,12 +96,12 @@ ul {
 
 /* Logo Fishing Spot bannière */
 
-.svgImg {
+.svg-img {
   height: 20px;
   padding: 1px;
 }
 
-#ulInline {
+#ul-inline {
   display: flex;
   justify-content: space-evenly;
   background-color: #a8c1b1;

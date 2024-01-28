@@ -14,12 +14,12 @@
 
 /* En savoir plus box + button */
 
-#enSavoirPlusContainer {
+#en-savoir-plus-container {
   display: flex;
   justify-content: center;
 }
 
-#selectionLac {
+#selection-lac {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -30,7 +30,7 @@
   margin: 0px 15px 15px;
 }
 
-.nomLac {
+.nom-lac {
   grid-column: 2;
   grid-row: 1;
   justify-self: center;
@@ -38,7 +38,7 @@
   color: white;
 }
 
-.boutonLac {
+.bouton-lac {
   grid-column: 2;
   grid-row: 2;
   justify-self: center;
@@ -52,7 +52,7 @@
   box-shadow: 5px 5px 10px rgb(114, 114, 114);
 }
 
-.favoriLac {
+.favori-lac {
   grid-row: 1;
   grid-column: 3;
   height: 20px;
@@ -527,6 +527,7 @@ textarea {
   color: white;
 }
 
+/* BOUTON PAS BON A REVOIR ET NOM PAS BON */
 .biboop {
   padding: 10px;
   background-color: #3c6255;
