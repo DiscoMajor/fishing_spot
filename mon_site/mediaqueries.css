@@ -120,7 +120,7 @@
 /* MediaQueries page contact pour formulaire et textes */
 
 @media only screen and (max-width: 675px) {
-  .h4MediaQ {
+  .h4-media-querie {
     padding: 10px;
     font-size: small;
     text-align: center;

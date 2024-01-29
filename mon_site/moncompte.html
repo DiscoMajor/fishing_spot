@@ -11,105 +11,106 @@
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="icon" type="image/x-icon" href="../mon_site/icones/fs_favicon.png" />
   </head>
-  <header>
-    <div id="flex-header">
-      <div id="logo-fs">
-        <img src="..\mon_site\logo_fs\logo_fishing_spot.svg" alt="logo_fishing_spot" />
-      </div>
-      <h1>Fishing Spot</h1>
 
-      <div id="gap-img-navbar">
-        <img class="svg-img" src="..\mon_site\icones\louperecherche_ico.svg" alt="search" />
-        <img class="svg-img" src="..\mon_site\icones\favoris_ico.svg" alt="favoris" />
-        <img class="svg-img" src="..\mon_site\icones\mon_compte_ico.svg" alt="mon compte" />
-      </div>
-    </div>
-
-    <div id="headerBackGroundColor">
-      <div id="navBarFlex">
-        <nav>
-          <ul id="ul-inline">
-            <li>Occasions</li>
-            <li>Carte</li>
-            <li>Actualités</li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <div class="banniereHautDePage">
-    <div class="titreBannierePages">
-      <h2 class="h2BannierePages">MON COMPTE</h2>
-    </div>
-  </div>
-
-  <div id="avatarContainer">
-    <div id="avatar">
-      <img src="..\mon_site\img\avatar1.png" alt="avatar1" />
-    </div>
-    <div id="containerButtonAvatar">
-      <button>Changer mon avatar</button>
-    </div>
-  </div>
-
-  
-    <form action="page.php" method="post">
-      <div id="monCompteFlexBox">
-            <div id="flexBoxLabels">
-              <label  for="pseudoMonCompte">Changer de pseudo</label>
-              <label for="pseudoConfirm">Changer de mot de passe</label>
-              <label  for="password">Confirmer le mot de passe</label>
-              <label for="emailMonCompte">Changer votre email</label>
-            </div>
-
-            <div id="flexBoxInputs">
-              <input type="text" placeholder="Votre pseudo" name="pseudoMonCompte" />
-              <input type="password" placeholder="Nouveau mot de passe" name="pseudoConfirm" />
-              <input   type="password" placeholder="Confirmation" name="passwordMonCompte" />
-              <input type="email" placeholder="Nouvel email" name="emailMonCompte" />
-            </div>
-      </div>
-  </form>
-
-
-    <div id="ButtonChangementInfoPerso">
-      <div id="containerButtonChangementInfoPerso">
-        <input type="submit" value="Confirmer" />
-      </div>
-    </div>
-  </form>
-
-  <div id="banniereMonCompte"></div>
-
-  <footer>
-    <div id="footerFlex">
-      <div class="footerBox1">
-        <ul>
-          <h3>Legal</h3>
-          <li class="liFooter">CGU</li>
-          <li class="liFooter">CGV</li>
-          <li class="liFooter">Donées personnelles</li>
-        </ul>
-      </div>
-      <div class="footerBox2">
-        <ul class="ulFooter">
-          <h3>Informations</h3>
-          <li class="liFooter">Contact</li>
-          <li class="liFooter">Mon compte</li>
-          <li class="liFooter">Actualités</li>
-        </ul>
-      </div>
-      <div id="containerbox3_4">
-        <div class="footerBox3">
+  <body>
+    <header>
+      <div id="flex-header">
+        <div id="logo-fs">
           <img src="..\mon_site\logo_fs\logo_fishing_spot.svg" alt="logo_fishing_spot" />
         </div>
-        <div class="footerBox4">
-          <img class="svg-img" src="..\mon_site\icones\insta_ico.svg" alt="" />
-          <img class="svg-img" src="..\mon_site\icones\twitter_ico.svg" alt="favoris_ico.svg" />
-          <img class="svg-img" src="..\mon_site\icones\fb_ico.svg" alt="" />
+        <h1>Fishing Spot</h1>
+
+        <div id="gap-img-navbar">
+          <img class="svg-img" src="..\mon_site\icones\louperecherche_ico.svg" alt="search" />
+          <img class="svg-img" src="..\mon_site\icones\favoris_ico.svg" alt="favoris" />
+          <img class="svg-img" src="..\mon_site\icones\mon_compte_ico.svg" alt="mon compte" />
         </div>
       </div>
+
+      <div id="header-background-color">
+        <div id="navBarFlex">
+          <nav>
+            <ul id="ul-inline">
+              <li><a href="occasions.html">Occasions</a></li>
+              <li><a href="index.html">Carte</a></li>
+              <li><a href="actualites.html">Actualités</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="banniereHautDePage">
+      <div class="titreBannierePages">
+        <h2 class="h2-banniere-pages">MON COMPTE</h2>
+      </div>
     </div>
-  </footer>
-</body>
+
+    <div id="avatarContainer">
+      <div id="avatar">
+        <img src="..\mon_site\img\avatar1.png" alt="avatar1" />
+      </div>
+      <div id="containerButtonAvatar">
+        <button>Changer mon avatar</button>
+      </div>
+    </div>
+
+    <form action="page.php" method="post">
+      <div id="monCompteFlexBox">
+        <div id="flexBoxLabels">
+          <label for="pseudoMonCompte">Changer de pseudo</label>
+          <label for="pseudoConfirm">Changer de mot de passe</label>
+          <label for="password">Confirmer le mot de passe</label>
+          <label for="emailMonCompte">Changer votre email</label>
+        </div>
+
+        <div id="flexBoxInputs">
+          <input type="text" placeholder="Votre pseudo" name="pseudoMonCompte" />
+          <input type="password" placeholder="Nouveau mot de passe" name="pseudoConfirm" />
+          <input type="password" placeholder="Confirmation" name="passwordMonCompte" />
+          <input type="email" placeholder="Nouvel email" name="emailMonCompte" />
+        </div>
+      </div>
+
+      <div id="ButtonChangementInfoPerso">
+        <div id="containerButtonChangementInfoPerso">
+          <input type="submit" value="Confirmer" />
+        </div>
+      </div>
+    </form>
+
+    <div id="banniereMonCompte"></div>
+
+    <footer>
+      <div id="footer-flex">
+        <div class="footer-box1">
+          <ul>
+            <h3>Legal</h3>
+            <li class="li-footer">CGU</li>
+            <li class="li-footer">CGV</li>
+            <li class="li-footer">Donées personnelles</li>
+          </ul>
+        </div>
+        <div class="footer-box2">
+          <ul class="ul-footer">
+            <h3>Informations</h3>
+            <li class="li-footer">Contact</li>
+            <li class="li-footer">Mon compte</li>
+            <li class="li-footer">Actualités</li>
+          </ul>
+        </div>
+
+        <div id="container-box3-4">
+          <div class="footer-box3">
+            <img src="..\mon_site\logo_fs\logo_fishing_spot.svg" alt="logo_fishing_spot" />
+          </div>
+          <div class="footer-box4">
+            <img class="svg-img" src="..\mon_site\icones\insta_ico.svg" alt="" />
+            <img class="svg-img" src="..\mon_site\icones\twitter_ico.svg" alt="favoris_ico.svg" />
+            <img class="svg-img" src="..\mon_site\icones\fb_ico.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
