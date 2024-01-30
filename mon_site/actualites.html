@@ -1,138 +1,136 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <title>Fishing Spot - Accueil</title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" type="image/x-icon" href="../mon_site/icones/fs_favicon.png" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  </head>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <title>Actualités</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/mediaqueries.css" />
+        <link rel="icon" type="image/x-icon" href="../mon_site/icones/fs_favicon.png" />
+    </head>
 
-  <body>
-    <header>
-      <div id="flex-header">
-        <div id="logo-fs">
-          <img src="..\mon_site\logo_fs\logo_fishing_spot.svg" alt="logo_fishing_spot" />
-        </div>
-        <h1>Fishing Spot</h1>
+    <body>
+        <header>
+            <div id="flex-header">
+                <div id="logo-fs">
+                    <a href="index.html"><img src="..\mon_site\logo_fs\logo_fishing_spot.svg" alt="logo_fishing_spot" /></a>
+                </div>
+                <h1>Fishing Spot</h1>
 
-        <div id="gap-img-navbar">
-          <img class="svg-img" src="..\mon_site\icones\louperecherche_ico.svg" alt="search" />
-          <img class="svg-img" src="..\mon_site\icones\favoris_ico.svg" alt="favoris" />
-          <img class="svg-img" src="..\mon_site\icones\mon_compte_ico.svg" alt="mon compte" />
-        </div>
-      </div>
+                <div id="gap-img-navbar">
+                    <a href=""><img class="svg-img" src="..\mon_site\icones\louperecherche_ico.svg" alt="search" /></a>
+                    <a href="favoris.html"><img class="svg-img" src="..\mon_site\icones\favoris_ico.svg" alt="favoris" /></a>
+                    <a href="moncompte.html"><img class="svg-img" src="..\mon_site\icones\mon_compte_ico.svg" alt="mon compte" /></a>
+                </div>
+            </div>
 
-      <div id="header-background-color">
-        <div id="navBarFlex">
-          <nav>
-            <ul id="ul-inline">
-              <li><a href="occasions.html">Occasions</a></li>
-              <li><a href="index.html">Carte</a></li>
-              <li><a href="actualites.html">Actualités</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+            <div id="header-background-color">
+                <div id="navBarFlex">
+                    <nav>
+                        <ul id="ul-inline">
+                            <li><a href="occasions.html">Occasions</a></li>
+                            <li><a href="index.html">Carte</a></li>
+                            <li><a href="actualites.html">Actualités</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
 
-    <div class="banniereHautDePage">
-      <div class="titreBannierePages">
-        <h2 class="h2-banniere-pages">ACTUALITÉS</h2>
-      </div>
-    </div>
-
-    <div id="actuGridContainer">
-      <div class="actuBoxes1">
-        <div class="actuImgFlexBox">
-          <img src="https://picsum.photos/200/200" alt="" />
-        </div>
-        <div class="actuTexteFlexBox">
-          <h4>Article Sponsorisé</h4>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae aspernatur harum tempore eius magnam alias eveniet a earum possimus
-            similique.
-          </p>
-        </div>
-      </div>
-      <div class="actuBoxes2">
-        <div class="actuImgFlexBox">
-          <img src="https://picsum.photos/200/200" alt="" />
-        </div>
-        <div class="actuTexteFlexBox">
-          <h4>Article Sponsorisé</h4>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae aspernatur harum tempore eius magnam alias eveniet a earum possimus
-            similique.
-          </p>
-        </div>
-      </div>
-      <div class="actuBoxes3">
-        <div class="actuImgFlexBox">
-          <img src="https://picsum.photos/200/200" alt="" />
-        </div>
-        <div class="actuTexteFlexBox">
-          <h4>Article Sponsorisé</h4>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae aspernatur harum tempore eius magnam alias eveniet a earum possimus
-            similique.
-          </p>
-        </div>
-      </div>
-      <div class="actuBoxes4">
-        <div class="actuImgFlexBox">
-          <img src="https://picsum.photos/200/200" alt="" />
-        </div>
-        <div class="actuTexteFlexBox">
-          <h4>Article Sponsorisé</h4>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae aspernatur harum tempore eius magnam alias eveniet a earum possimus
-            similique.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <footer>
-      <div id="footer-flex">
-        <div class="footer-box1">
-          <ul>
-            <h3>Legal</h3>
-            <li class="li-footer">CGU</li>
-            <li class="li-footer">CGV</li>
-            <li class="li-footer">Donées personnelles</li>
-          </ul>
-        </div>
-        <div class="footer-box2">
-          <ul class="ul-footer">
-            <h3>Informations</h3>
-            <li class="li-footer">Contact</li>
-            <li class="li-footer">Mon compte</li>
-            <li class="li-footer">Actualités</li>
-          </ul>
+        <div class="banniereHautDePage">
+            <div class="titreBannierePages">
+                <h2 class="h2-banniere-pages">ACTUALITÉS</h2>
+            </div>
         </div>
 
-        <div id="container-box3-4">
-          <div class="footer-box3">
-            <img src="..\mon_site\logo_fs\logo_fishing_spot.svg" alt="logo_fishing_spot" />
-          </div>
-          <div class="footer-box4">
-            <img class="svg-img" src="..\mon_site\icones\insta_ico.svg" alt="" />
-            <img class="svg-img" src="..\mon_site\icones\twitter_ico.svg" alt="favoris_ico.svg" />
-            <img class="svg-img" src="..\mon_site\icones\fb_ico.svg" alt="" />
-          </div>
+        <div id="actuGridContainer">
+            <div class="actuBoxes1">
+                <div class="actuImgFlexBox">
+                    <img src="https://picsum.photos/200/200" alt="" />
+                </div>
+                <div class="actuTexteFlexBox">
+                    <h4>Article Sponsorisé</h4>
+                    <hr />
+                    <p>
+                        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae aspernatur harum
+                        tempore eius magnam alias eveniet a earum possimus similique.
+                    </p>
+                </div>
+            </div>
+            <div class="actuBoxes2">
+                <div class="actuImgFlexBox">
+                    <img src="https://picsum.photos/200/200" alt="" />
+                </div>
+                <div class="actuTexteFlexBox">
+                    <h4>Article Sponsorisé</h4>
+                    <hr />
+                    <p>
+                        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae aspernatur harum
+                        tempore eius magnam alias eveniet a earum possimus similique.
+                    </p>
+                </div>
+            </div>
+            <div class="actuBoxes3">
+                <div class="actuImgFlexBox">
+                    <img src="https://picsum.photos/200/200" alt="" />
+                </div>
+                <div class="actuTexteFlexBox">
+                    <h4>Article Sponsorisé</h4>
+                    <hr />
+                    <p>
+                        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae aspernatur harum
+                        tempore eius magnam alias eveniet a earum possimus similique.
+                    </p>
+                </div>
+            </div>
+            <div class="actuBoxes4">
+                <div class="actuImgFlexBox">
+                    <img src="https://picsum.photos/200/200" alt="" />
+                </div>
+                <div class="actuTexteFlexBox">
+                    <h4>Article Sponsorisé</h4>
+                    <hr />
+                    <p>
+                        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae aspernatur harum
+                        tempore eius magnam alias eveniet a earum possimus similique.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-    </footer>
-  </body>
+
+        <footer>
+            <div id="footer-flex">
+                <div class="footer-box1">
+                    <ul>
+                        <h3>Legal</h3>
+                        <li class="li-footer">CGU</li>
+                        <li class="li-footer">CGV</li>
+                        <li class="li-footer">Donées personnelles</li>
+                    </ul>
+                </div>
+                <div class="footer-box2">
+                    <ul class="ul-footer">
+                        <h3>Informations</h3>
+                        <li class="li-footer">Contact</li>
+                        <li class="li-footer">Mon compte</li>
+                        <li class="li-footer">Actualités</li>
+                    </ul>
+                </div>
+
+                <div id="container-box3-4">
+                    <div class="footer-box3">
+                        <img src="..\mon_site\logo_fs\logo_fishing_spot.svg" alt="logo_fishing_spot" />
+                    </div>
+                    <div class="footer-box4">
+                        <img class="svg-img" src="..\mon_site\icones\insta_ico.svg" alt="" />
+                        <img class="svg-img" src="..\mon_site\icones\twitter_ico.svg" alt="favoris_ico.svg" />
+                        <img class="svg-img" src="..\mon_site\icones\fb_ico.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
