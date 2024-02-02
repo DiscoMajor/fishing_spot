@@ -7,9 +7,9 @@
         <meta charset="utf-8" />
         <title>Fishing Spot - Accueil</title>
         <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/stylessass.css" />
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="css/mediaqueries.css" />
-        <link rel="stylesheet" href="css/stylessass.css" />
         <link rel="icon" type="image/x-icon" href="../mon_site/icones/fs_favicon.png" />
         <link
             rel="stylesheet"
@@ -56,7 +56,6 @@
 
         <div id="map-display-flex">
             <div id="map"></div>
-            <script src="js/leafletmap.js"></script>
         </div>
 
         <div id="en-savoir-plus-container">
@@ -64,6 +63,16 @@
                 <img class="favori-lac" src="..\mon_site\icones\favoris_ico.svg" alt="mon compte" />
                 <h3 class="nom-lac">LAC DE BIDOT</h3>
                 <button class="bouton-pages">En savoir plus</button>
+            </div>
+        </div>
+
+        <button id="showOverlayBtn">Afficher l'overlay</button>
+        <div id="overlay" class="hidden">
+            <div class="overlay-content">
+                <h1>Salut</h1>
+                <p>Contenu de l'overlay</p>
+                <p>Contenu de l'overlay</p>
+                <p>Contenu de l'overlay</p>
             </div>
         </div>
 
@@ -104,5 +113,7 @@
                 </div>
             </div>
         </footer>
+        <script src="js/script.js"></script>
+        <script src="js/leafletmap.js"></script>
     </body>
 </html>
