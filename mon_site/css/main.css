@@ -10,10 +10,6 @@ body {
     font-family: "Roboto Mono", monospace;
 }
 
-a {
-    font-size: 0.8em;
-}
-
 p {
     text-align: center;
     text-align: justify;
@@ -91,7 +87,6 @@ li {
 }
 
 ul {
-    list-style-type: none;
     padding-inline-start: 0px;
 }
 
@@ -142,7 +137,6 @@ footer {
 }
 
 .li-footer {
-    font-size: 0.8em;
     margin-top: 5px;
 }
 /* MEDIA QUERIES FOOTER */
