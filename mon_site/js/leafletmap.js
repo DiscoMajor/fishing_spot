@@ -22,13 +22,13 @@ let redPin = L.icon({
 L.marker([43.526107, 1.285239], { icon: redPin })
     .addTo(map)
     .bindPopup(
-        "<div><img class='imgPopUpLeaftlet' src='https://picsum.photos/100/100'></div> <div class='textAndButtonInsidePopUpLeaflet'> <h3>Petit Lac De Bidot</h3> <p>Fonsorbes</p> <button onclick='openOverlay1()' class='bouton-pages' type='submit'>En savoir plus</button> </div>"
+        "<div><img class='imgPopUpLeaftlet' src='https://picsum.photos/100/100'></div> <div class='textAndButtonInsidePopUpLeaflet'> <h3>Petit Lac De Bidot</h3> <p>Fonsorbes</p> <button id='btnCloseOverlay' onclick='openOverlay1()' class='bouton-pages' type='submit'>En savoir plus</button> </div>"
     );
 
 L.marker([43.584188, 1.358444], { icon: redPin })
     .addTo(map)
     .bindPopup(
-        "<div><img class='imgPopUpLeaftlet' src='https://picsum.photos/100/100'></div> <div class='textAndButtonInsidePopUpLeaflet'> <h3>Lac du vieux Pigeonnier</h3> <p>Tournefeuille</p> <button onclick='openOverlay2()' class='bouton-pages' type='submit'>En savoir plus</button> </div>"
+        "<div><img class='imgPopUpLeaftlet' src='https://picsum.photos/100/100'></div> <div class='textAndButtonInsidePopUpLeaflet'> <h3>Lac du vieux Pigeonnier</h3> <p>Tournefeuille</p> <button id='btnCloseOverlay' onclick='openOverlay2()' class='bouton-pages' type='submit'>En savoir plus</button> </div>"
     );
 
 L.marker([43.537343, 1.514988], { icon: redPin })
@@ -53,25 +53,19 @@ function openOverlay2() {
 }
 
 // //* Same function as before for the third overlay
-// function openOverlay2() {
-//     let overlay2 = document.getElementById("overlay2");
-//     overlay2.classList.remove("hidden");
-//     overlay2.style.right = overlay2.style.right === "0%" ? "-100%" : "0%";
+// function openOverlay3() {
+//     let overlay3 = document.getElementById("overlay3");
+//     overlay3.classList.remove("hidden");
+//     overlay3.style.right = overlay3.style.right === "0%" ? "-100%" : "0%";
 // }
 
-//! Ce qu'il y a en dessous sert juste à pouvoir fermer l'overlay si je clique a l'extérieur de celui-ci
+//! Ce qu'il y a en dessous sert juste à pouvoir fermer l'overlay si je clique a l'extérieur de celui-ci (utiliser selectorall pour que ça s'applique à tous mes overlay et tous mes boutons)
 
-// document.addEventListener("click", function (event) {
-//     let overlay = document.getElementById("overlay-1");
-//     let overlayBtn = document.getElementById("showOverlayBtn");
-
-//     if (event.target !== overlay && event.target !== overlayBtn && !overlay.contains(event.target)) {
-//         // Clique à l'extérieur de l'overlay ou du bouton
-//         if (!overlay.classList.contains("hidden")) {
-//             toggleOverlay();
-//         }
-//     }
-// });
+document.addEventListener("click", function (event) {
+    // let closeoverlay = document.getElementById("overlay1"); // mes overlays ici ??
+    let closeoverlay = document.querySelectorAll("#overlay1, #overlay2"); // mes overlay 1 et 2 dans mon HTML
+    let overlayBtn = document.getElementById("btnCloseOverlay"); // mes boutons
+});
 
 //! (je pourrais maybe utiliser query selector all et mes IDS overlay123 pour faire une seule fonction ?
 // ! Du style : document.querySelectorAll("#overlac1, #overlaylac2") ect ect et idem pour fermer l'overlay ?
