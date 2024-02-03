@@ -543,19 +543,30 @@ textarea {
 
 /* Related to my map (overlay when you click on a specific button of the map) */
 
-.hidden {
-    display: none; /* Je cache ici mon texte qui va s'afficher une fois mon animation faite */
-}
-#overlay {
+/* Test pour récuperer mon bouton leaflet... OVERLAY 2 */
+
+#overlay1 {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -100%; /* Il est caché à l'extérieur de l'écran à -100% */
     height: 80%;
-    width: 500px; /* Ajustez la largeur à 800px */
-    background-color: #a75454;
+    width: 500px;
+    background-color: #ff3fc5;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    animation: slideIn 0.8s ease;
+    animation: slideIn 0.8s ease; /* Animation fluide de mon overlay */
 }
+#overlay2 {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Il est caché à l'extérieur de l'écran à -100% */
+    height: 80%;
+    width: 500px;
+    background-color: #503f4b;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.8s ease; /* Animation fluide de mon overlay */
+}
+
+/* Configuration du slideIn (donc l'animation) à 0% de l'animation mon overlay est toujours en dehors de l'écran, à 100% il est à sa postion définie sur ma page et visible */
 
 @keyframes slideIn {
     0% {
@@ -566,11 +577,12 @@ textarea {
     }
 }
 
+/* Je cache ici mon texte qui va s'afficher une fois mon animation faite */
+
+.hidden {
+    display: none;
+}
+
 .overlay-content {
     padding: 20px;
-}
-#showOverlayBtn {
-    margin: 20px;
-    padding: 10px;
-    cursor: pointer;
 }
