@@ -22,20 +22,22 @@ let redPin = L.icon({
 L.marker([43.526107, 1.285239], { icon: redPin })
     .addTo(map)
     .bindPopup(
-        "<div><img class='imgPopUpLeaftlet' src='https://picsum.photos/100/100'></div> <div class='textAndButtonInsidePopUpLeaflet'> <h3>Petit Lac De Bidot</h3> <p>Fonsorbes</p> <button id='btnCloseOverlay' onclick='openOverlay1()' class='bouton-pages' type='submit'>En savoir plus</button> </div>"
+        "<div><img class='imgPopUpLeaftlet' src='./img/lac_bidot.jpg'></div> <div class='textAndButtonInsidePopUpLeaflet'> <h3>Petit Lac De Bidot</h3> <p>Fonsorbes</p> <button id='btnCloseOverlay' onclick='openOverlay1()' class='bouton-pages' type='submit'>En savoir plus</button> </div>"
     );
 
 L.marker([43.584188, 1.358444], { icon: redPin })
     .addTo(map)
     .bindPopup(
-        "<div><img class='imgPopUpLeaftlet' src='https://picsum.photos/100/100'></div> <div class='textAndButtonInsidePopUpLeaflet'> <h3>Lac du vieux Pigeonnier</h3> <p>Tournefeuille</p> <button id='btnCloseOverlay' onclick='openOverlay2()' class='bouton-pages' type='submit'>En savoir plus</button> </div>"
+        "<div><img class='imgPopUpLeaftlet' src='./img/lac_vieux_pigeonnier.png'></div> <div class='textAndButtonInsidePopUpLeaflet'> <h3>Lac du vieux Pigeonnier</h3> <p>Tournefeuille</p> <button id='btnCloseOverlay' onclick='openOverlay2()' class='bouton-pages' type='submit'>En savoir plus</button> </div>"
     );
 
 L.marker([43.537343, 1.514988], { icon: redPin })
     .addTo(map)
     .bindPopup(
-        "<div><img class='imgPopUpLeaftlet' src='https://picsum.photos/100/100'></div> <div class='textAndButtonInsidePopUpLeaflet'> <h3>Lac de Labège</h3> <p>Labège</p> <button class='bouton-pages' type='submit'>En savoir plus</button> </div>"
+        "<div><img class='imgPopUpLeaftlet' src='./img/lac_de_labege.png'></div> <div class='textAndButtonInsidePopUpLeaflet'> <h3>Lac de Labège</h3> <p>Labège</p> <button onclick='openOverlay3()' class='bouton-pages' type='submit'>En savoir plus</button> </div>"
     );
+
+//! OVERLAYS
 
 //* Fonction qui enlève mon texte caché en HTML pour l'afficher par la droite avec une transition :
 function openOverlay1() {
@@ -44,7 +46,7 @@ function openOverlay1() {
     overlay1.style.right = overlay1.style.right === "0%" ? "-100%" : "0%"; // De ce que j'ai compris, je dois récupérer l'animation (Keyframes de mon css) et lui indiquer de la faire. Donc si à -100%  lorsque je clique sur le bouton elle va à 0% et inversement. Merci internet.
 }
 
-//* Same function as before for another overlay
+//* Same function as before for overlay 2
 
 function openOverlay2() {
     let overlay2 = document.getElementById("overlay2");
@@ -52,14 +54,15 @@ function openOverlay2() {
     overlay2.style.right = overlay2.style.right === "0%" ? "-100%" : "0%";
 }
 
-// //* Same function as before for the third overlay
-// function openOverlay3() {
-//     let overlay3 = document.getElementById("overlay3");
-//     overlay3.classList.remove("hidden");
-//     overlay3.style.right = overlay3.style.right === "0%" ? "-100%" : "0%";
-// }
+//* Same function as before for the third overlay
 
-//! Ce qu'il y a en dessous sert juste à pouvoir fermer l'overlay si je clique a l'extérieur de celui-ci (utiliser selectorall pour que ça s'applique à tous mes overlay et tous mes boutons)
+function openOverlay3() {
+    let overlay3 = document.getElementById("overlay3");
+    overlay3.classList.remove("hidden");
+    overlay3.style.right = overlay3.style.right === "0%" ? "-100%" : "0%";
+}
+
+//! Function to close my overlay when i click outside the overlay (NOT WORKING FOR THE MOMENT)
 
 document.addEventListener("click", function (event) {
     // let closeoverlay = document.getElementById("overlay1"); // mes overlays ici ??
@@ -69,3 +72,5 @@ document.addEventListener("click", function (event) {
 
 //! (je pourrais maybe utiliser query selector all et mes IDS overlay123 pour faire une seule fonction ?
 // ! Du style : document.querySelectorAll("#overlac1, #overlaylac2") ect ect et idem pour fermer l'overlay ?
+
+//! Maybe i can do a loop or a boolean for my 3 functions. To avoid repetitions of the same function but with a different name
