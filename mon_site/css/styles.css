@@ -317,6 +317,10 @@ input[type="textarea"] {
     margin: 10px;
 }
 
+.actuTexteFlexBox a {
+    font-size: 1em;
+}
+
 /*  Hr (trait noir sous articles) */
 
 #actuGridContainer hr {
