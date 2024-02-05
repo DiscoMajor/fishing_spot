@@ -70,7 +70,10 @@ document.addEventListener("click", function (event) {
     let overlayBtn = document.getElementById("btnCloseOverlay"); // mes boutons
 });
 
+
+
 //! (je pourrais maybe utiliser query selector all et mes IDS overlay123 pour faire une seule fonction ?
 // ! Du style : document.querySelectorAll("#overlac1, #overlaylac2") ect ect et idem pour fermer l'overlay ?
 
-//! Maybe i can do a loop or a boolean for my 3 functions. To avoid repetitions of the same function but with a different name
+//! Maybe i can do a loop or a boolean for my 3 functions. To avoid repetitions of the same function but with a different name FALSE OR TRUE
+//! Alors il me faut un addlistener
