@@ -12,8 +12,8 @@ let tiles = L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{
 // Red marker ICON (ping on the map)
 
 let redPin = L.icon({
-    iconUrl: "js/location_leaflet.png",
-    iconSize: [40, 40], // size of the icon
+    iconUrl: "js/location_leaflet.png", // Custom icon for my map
+    iconSize: [40, 40], // size of the redpin icon
     iconAnchor: [20, 40], // point of the icon which will correspond to marker's location
     popupAnchor: [0, -20], // point from which the popup should open relative to the iconAnchor
 });
@@ -42,9 +42,9 @@ L.marker([43.537343, 1.514988], { icon: redPin })
 
 //* Fonction qui enlève mon texte caché en HTML pour l'afficher par la droite avec une transition :
 function openOverlay1() {
-    let overlay1 = document.getElementById("overlay1"); // Je récupère l'ID de ma div ou est contenu mon texte dans le html
+    let overlay1 = document.getElementById("overlay1"); // Je récupère l'ID de ma div dans mon HTML
     overlay1.classList.toggle("hidden"); // Je bascule (comme un bouton on/off d'une lumière) le "display: none;" de ma class .hidden situé dans mon html (donc mon texte est visible mais toujours sur la droite de mon écran à -100%)
-    overlay1.style.right = overlay1.style.right === "0%" ? "-100%" : "0%"; // De ce que j'ai compris, je dois récupérer l'animation (Keyframes de mon css) et lui indiquer de la faire. Donc si à -100%  lorsque je clique sur le bouton elle va à 0% et inversement. Merci internet.
+    overlay1.style.right = overlay1.style.right === "0%" ? "-100%" : "0%"; // Je récupère l'animation (Keyframes de mon css) et lui indiquer de la faire. Donc si à -100%  lorsque je clique sur le bouton elle va à 0% et inversement. Merci internet.
 }
 
 //* For the second overlay
@@ -114,16 +114,22 @@ closeOverlaysBtn3("overlay3");
 
 //! Trying to create the same function and avoid redundancy.. not working ATM
 
-//TODO ADD A CONSOLE LOG TO SEE WHAT IS GOING ON
+//TODO ADD A CONSOLE LOG TO SEE WHAT IS GOING ON (maybe échanger les valeurs du style.right ou un if else... ? A L'AIDE)
 
 // function OverlaysClosingBtns(btnIds) {
-//     closingBtns = document.querySelectorbyId(btnIds);
-//     closingBtns.addEventListener("click", (event) => {
-//         closingBtns.classList.add("hidden");
-//         closingBtns.style.right = closingBtns.style.right === "0%" ? "-100%" : "0%";
-//     });
+//     closingBtns = document.getElementById(btnIds);
+//     closingBtns.classList.toggle("hidden");
+//     closingBtns.style.right = closingBtns.style.right === "0%" ? "-100%" : "0%";
 // }
 
 // function overlayBtn1() {
 //     OverlaysClosingBtns("#close-overlay1");
+// }
+
+// function overlayBtn2() {
+//     OverlaysClosingBtns("#close-overlay2");
+// }
+
+// function overlayBtn3() {
+//     OverlaysClosingBtns("#close-overlay3");
 // }
