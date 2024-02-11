@@ -23,7 +23,7 @@ let redPin = L.icon({
 L.marker([43.526107, 1.285239], { icon: redPin })
     .addTo(map)
     .bindPopup(
-        "<div><img class='imgPopUpLeaftlet' src='./img/lac_bidot.jpg'></div> <div class='textAndButtonInsidePopUpLeaflet'> <h3>Petit Lac De Bidot</h3> <p>Fonsorbes</p> <button id='titu' onclick='openOverlay1()' class='bouton-pages' type='submit'>En savoir plus</button> </div>"
+        "<div><img class='imgPopUpLeaftlet' src='./img/lac_bidot.jpg'></div> <div class='textAndButtonInsidePopUpLeaflet'> <h3>Petit Lac De Bidot</h3> <p>Fonsorbes</p> <button id='à' onclick='openOverlay1()' class='bouton-pages' type='submit'>En savoir plus</button> </div>"
     );
 
 L.marker([43.584188, 1.358444], { icon: redPin })
@@ -42,7 +42,7 @@ L.marker([43.537343, 1.514988], { icon: redPin })
 
 //* Fonction qui enlève mon texte caché en HTML pour l'afficher par la droite avec une transition :
 function openOverlay1() {
-    overlay1 = document.getElementById("overlay1"); // Je récupère l'ID de ma div ou est contenu mon texte dans le html
+    let overlay1 = document.getElementById("overlay1"); // Je récupère l'ID de ma div ou est contenu mon texte dans le html
     overlay1.classList.toggle("hidden"); // Je bascule (comme un bouton on/off d'une lumière) le "display: none;" de ma class .hidden situé dans mon html (donc mon texte est visible mais toujours sur la droite de mon écran à -100%)
     overlay1.style.right = overlay1.style.right === "0%" ? "-100%" : "0%"; // De ce que j'ai compris, je dois récupérer l'animation (Keyframes de mon css) et lui indiquer de la faire. Donc si à -100%  lorsque je clique sur le bouton elle va à 0% et inversement. Merci internet.
 }
@@ -83,10 +83,47 @@ function openOverlay3() {
 // }
 
 //TODO Fonction pour fermer les overlays. Bolean ?
-//! MARCHE PAS
+//! Marche mais beaucoup de redondance...
+
 function closeOverlaysBtn1() {
-    closingOverlay1 = document.getElementById("close-overlay1");
-    closingOverlay1.addEventListener("click", (event) => {
+    closeOverlay1 = document.querySelector("#close-overlay1");
+    closeOverlay1.addEventListener("click", (event) => {
         overlay1.classList.add("hidden");
+        overlay1.style.right = overlay1.style.right === "0%" ? "-100%" : "0%";
     });
 }
+closeOverlaysBtn1("overlay1");
+
+function closeOverlaysBtn2() {
+    closeOverlay2 = document.querySelector("#close-overlay2");
+    closeOverlay2.addEventListener("click", (event) => {
+        overlay2.classList.add("hidden");
+        overlay2.style.right = overlay2.style.right === "0%" ? "-100%" : "0%";
+    });
+}
+closeOverlaysBtn2("overlay2");
+
+function closeOverlaysBtn3() {
+    closeOverlay3 = document.querySelector("#close-overlay3");
+    closeOverlay3.addEventListener("click", (event) => {
+        overlay3.classList.add("hidden");
+        overlay3.style.right = overlay3.style.right === "0%" ? "-100%" : "0%";
+    });
+}
+closeOverlaysBtn3("overlay3");
+
+//! Trying to create the same function and avoid redundancy.. not working ATM
+
+//TODO ADD A CONSOLE LOG TO SEE WHAT IS GOING ON
+
+// function OverlaysClosingBtns(btnIds) {
+//     closingBtns = document.querySelectorbyId(btnIds);
+//     closingBtns.addEventListener("click", (event) => {
+//         closingBtns.classList.add("hidden");
+//         closingBtns.style.right = closingBtns.style.right === "0%" ? "-100%" : "0%";
+//     });
+// }
+
+// function overlayBtn1() {
+//     OverlaysClosingBtns("#close-overlay1");
+// }
