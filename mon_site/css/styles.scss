@@ -52,7 +52,7 @@ a {
 
 /* Containers of my map pop up */
 
-.textAndButtonInsidePopUpLeaflet {
+.textPopUpLeaflet {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -119,6 +119,8 @@ a {
 		height: auto;
 		display: block;
 		object-fit: cover;
+		position: relative;
+		bottom: 74px;
 	}
 }
 
