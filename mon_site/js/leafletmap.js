@@ -92,7 +92,7 @@ function openOverlay3() {
 //     openOverlay("overlay3");
 // }
 
-//TODO Fonction pour fermer les overlays. Bolean ?
+//TODO Fonction pour fermer les overlays. ?
 //! Marche mais beaucoup de redondance...
 
 function closeOverlaysBtn1() {

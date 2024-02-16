@@ -576,23 +576,22 @@ textarea {
 
 /* Related to my map (overlay when you click on a specific button of the map) */
 
-
-
 @mixin overlay-layout{
-	position: fixed;
-	top: 10px;
-	right: -100%; /* Hidden outside the screen */
-	height: 90%;
-	width: 500px;
-	background-color: #378354;
-	box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-	animation: slideIn 0.8s ease;  /* Animation settings: at -100% it is hidden off-screen. At 0%, it returns to its initial position and becomes visible. */
-	z-index: 1000;
+    position: fixed;
+    right: -100%;
+    top: 0px;
+    height: 100%;
+    width: 500px;
+    background-color: #378354;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.8s ease;
+    z-index: 1000;
 }.overlay-content {
 	padding: 20px;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	gap: 20px;
 	& > p,
 	h1 {
 		text-align: center;
@@ -602,6 +601,7 @@ textarea {
 		width: 300px;
 		border-radius: 5%;
 	}
+	
 }
 
 /* Defines the steps that make up the sequence of a CSS animation / finer control of my animation */ /* sliding smoothly */
@@ -626,7 +626,6 @@ textarea {
 	@include overlay-layout;
 }
 
-/* Je cache ici mon texte qui va s'afficher une fois mon animation faite */
 .hidden {
 	display: none;
 }

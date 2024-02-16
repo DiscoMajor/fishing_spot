@@ -542,6 +542,7 @@ textarea {
   align-items: center;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 .overlay-content > p,
 .overlay-content h1 {
@@ -564,41 +565,40 @@ textarea {
 }
 #overlay1 {
   position: fixed;
-  top: 10px;
-  right: -100%; /* Hidden outside the screen */
-  height: 90%;
+  right: -100%;
+  top: 0px;
+  height: 100%;
   width: 500px;
   background-color: #378354;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-  animation: slideIn 0.8s ease; /* Animation settings: at -100% it is hidden off-screen. At 0%, it returns to its initial position and becomes visible. */
+  animation: slideIn 0.8s ease;
   z-index: 1000;
 }
 
 #overlay2 {
   position: fixed;
-  top: 10px;
-  right: -100%; /* Hidden outside the screen */
-  height: 90%;
+  right: -100%;
+  top: 0px;
+  height: 100%;
   width: 500px;
   background-color: #378354;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-  animation: slideIn 0.8s ease; /* Animation settings: at -100% it is hidden off-screen. At 0%, it returns to its initial position and becomes visible. */
+  animation: slideIn 0.8s ease;
   z-index: 1000;
 }
 
 #overlay3 {
   position: fixed;
-  top: 10px;
-  right: -100%; /* Hidden outside the screen */
-  height: 90%;
+  right: -100%;
+  top: 0px;
+  height: 100%;
   width: 500px;
   background-color: #378354;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-  animation: slideIn 0.8s ease; /* Animation settings: at -100% it is hidden off-screen. At 0%, it returns to its initial position and becomes visible. */
+  animation: slideIn 0.8s ease;
   z-index: 1000;
 }
 
-/* Je cache ici mon texte qui va s'afficher une fois mon animation faite */
 .hidden {
   display: none;
 }/*# sourceMappingURL=styles.css.map */
