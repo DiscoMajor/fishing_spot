@@ -569,7 +569,7 @@ textarea {
   top: 0px;
   height: 100%;
   width: 500px;
-  background-color: #378354;
+  background-color: #f0eeee;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
   animation: slideIn 0.8s ease;
   z-index: 1000;
@@ -581,7 +581,7 @@ textarea {
   top: 0px;
   height: 100%;
   width: 500px;
-  background-color: #378354;
+  background-color: #f0eeee;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
   animation: slideIn 0.8s ease;
   z-index: 1000;
@@ -593,7 +593,7 @@ textarea {
   top: 0px;
   height: 100%;
   width: 500px;
-  background-color: #378354;
+  background-color: #f0eeee;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
   animation: slideIn 0.8s ease;
   z-index: 1000;

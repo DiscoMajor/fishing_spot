@@ -90,3 +90,26 @@ function closeOverlay(closeBtnSelector, overlaySelector) {
 closeOverlay("#close-overlay1", "#overlay1");
 closeOverlay("#close-overlay2", "#overlay2");
 closeOverlay("#close-overlay3", "#overlay3");
+
+//TODO Il me faut mon bouton pour ouvrir déjà a recuperer (lui donner une classe openBtnpopup dans mon JS) (Virer le onclick sur mon JS en haut et tout refaire propre.)
+// let openBtn = document.querySelector(".openBtnPopup")
+//TODO Il me faut recuperer la classe de mes overlays (donner une classe aussi overlay-popup par exemple et virer l'ID déjà en place dans mon HTML)
+// let overlayHtml = document.querySelector(".overlay-popup");
+//TODO Il me faut recuperer mon bouton fermeture présent dans mon HTML closeBtn (a changer en clase)
+// let closeBtn = document.querySelector(".closeBtnPopup")
+//! J'ai plusieurs overlay, donc je dois mettre selectorAll ? Et j'ai plusieurs boutons donc je dois aussi mettre selectorAll ?
+//! Il n'y aura pas de conflits ?
+
+// Modifier dans mon CSS avec le nouveau nom de ma classe pour les popups.
+
+//! Pour ouvrir l'overlay avec le bouton
+// openBtn.addEventListener('click',()=>{
+// overlayHtml.classList.toggle("hidden"); // Bouton ON/OFF de ma classe hidden //! .remove hidden à try si ca marche pas.
+// overlayHtml.style.right = overlay.style.right === "0%" ? "-100%" : "0%"; // J'ajoute la transition fluide de mon css à ma fonction
+// });
+
+// //! Pour fermer l'overlay avec le bouton
+// closeBtn.addEventListener("click", () => {
+//     overlayHtml.classList.toggle("hidden"); // Bouton ON/OFF de ma classe hidden //! .add hidden à try si ca marche pas
+//     overlayHtml.style.right = overlay.style.right === "0%" ? "-100%" : "0%"; // J'ajoute la transition fluide de mon css à ma fonction.
+// });
