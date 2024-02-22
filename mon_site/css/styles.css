@@ -548,10 +548,19 @@ textarea {
 .overlay-content h1 {
   text-align: center;
 }
-.overlay-content > img {
+.overlay-content .overlay-imgs {
   height: 300px;
   width: 300px;
   border-radius: 5%;
+}
+.overlay-content .favori-popup {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 30px;
+}
+.overlay-content .favori-popup img {
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Defines the steps that make up the sequence of a CSS animation / finer control of my animation */ /* sliding smoothly */

@@ -104,6 +104,8 @@ a {
 	top: 5px;
 }
 
+
+
 /* Bannières des mes pages */
 
 /* Bannière index.html page */
@@ -596,12 +598,23 @@ textarea {
 	h1 {
 		text-align: center;
 	}
-	& > img {
+	.overlay-imgs {
 		height: 300px;
 		width: 300px;
 		border-radius: 5%;
 	}
+	.favori-popup {
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		height: 30px;
+		
+		img{
+		box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+	}
+	}
 }
+
 
 /* Defines the steps that make up the sequence of a CSS animation / finer control of my animation */ /* sliding smoothly */
 @keyframes slideIn {
