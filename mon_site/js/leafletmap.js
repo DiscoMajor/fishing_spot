@@ -23,7 +23,7 @@ let redPin = L.icon({
 L.marker([43.526107, 1.285239], { icon: redPin })
     .addTo(map)
     .bindPopup(
-        `<div><img class='imgPopUpLeaftlet' src='./img/lac_bidot.jpg'></div>
+        `<div><img class='imgPopUpLeaftlet' src='./img/lac_bidot.jpg'> <img class='favori-lac' src='../mon_site/icones/favoris_ico.svg' alt='favoris icon' /></div>
         <div class='textPopUpLeaflet'> 
         <h3>Petit Lac De Bidot</h3>
         <p>📍 Fonsorbes</p> 
@@ -33,16 +33,18 @@ L.marker([43.526107, 1.285239], { icon: redPin })
 L.marker([43.584188, 1.358444], { icon: redPin })
     .addTo(map)
     .bindPopup(
-        `<div><img class='imgPopUpLeaftlet' src='./img/lac_vieux_pigeonnier.png'></div>
-        <div class='textPopUpLeaflet'> <h3>Lac du vieux Pigeonnier</h3> 
-        <p>📍 Tournefeuille</p> 
-        <button onclick='openOverlay2()' class='bouton-pages' type='submit'>En savoir plus</button> </div>`
+        `<div><img class='imgPopUpLeaftlet' src='./img/lac_vieux_pigeonnier.png'> <img class='favori-lac' src='../mon_site/icones/favoris_ico.svg' alt='favoris icon' /></div>
+        <div class='textPopUpLeaflet'>
+        <h3>Lac du vieux Pigeonnier</h3> 
+        <p>📍 Tournefeuille</p>
+        <button onclick='openOverlay2()' class='bouton-pages' type='submit'>En savoir plus</button>
+        </div>`
     );
 
 L.marker([43.537343, 1.514988], { icon: redPin })
     .addTo(map)
     .bindPopup(
-        `<div><img class='imgPopUpLeaftlet' src='./img/lac_de_labege.png'></div> 
+        `<div><img class='imgPopUpLeaftlet' src='./img/lac_de_labege.png'> <img class='favori-lac' src='../mon_site/icones/favoris_ico.svg' alt='favoris icon' /></div> 
         <div class='textPopUpLeaflet'> <h3>Lac de Labège</h3>
         <p>📍 Labège</p> 
         <button onclick='openOverlay3()' class='bouton-pages' type='submit'>En savoir plus</button> </div>`

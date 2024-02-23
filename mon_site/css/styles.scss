@@ -16,54 +16,20 @@ a {
 	}
 }
 
-
-
-/* En savoir plus box + button */
-
-#en-savoir-plus-container {
-	display: flex;
-	justify-content: center;
-}
-
-#selection-lac {
-	display: grid;
-	grid-template-columns: 1fr 5fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	height: 125px;
-	width: 300px;
-	border: solid 1px black;
-	background-color: rgb(0, 0, 0);
-	margin: 0px 15px 15px;
-	position: relative;
-
-	& > button {
-		grid-column: 2;
-		grid-row: 2;
-	}
-}
-
-.nom-lac {
-	grid-column: 2;
-	grid-row: 1;
-	justify-self: center;
-	align-self: center;
-	color: white;
-}
-
 /* Containers of my map pop up */
 
 .textPopUpLeaflet {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	button {
-		padding: 8px 10px;
-		font-size: 10px;
-		&:hover {
+		button {
 			padding: 8px 10px;
-			transform: none;
+			font-size: 10px;
+			&:hover {
+				padding: 8px 10px;
+				transform: none;
+			}
 		}
-	}
 }
 
 /* BOUTON 3 TEST */
@@ -93,19 +59,6 @@ a {
 	}
 }
 
-.favori-lac {
-	grid-row: 1;
-	grid-column: 3;
-	height: 20px;
-	justify-self: end;
-	padding: 2px;
-	position: absolute;
-	right: 5px;
-	top: 5px;
-}
-
-
-
 /* Bannières des mes pages */
 
 /* Bannière index.html page */
@@ -113,9 +66,7 @@ a {
 #banniere-fishing-spot {
 	height: 150px;
 	overflow: hidden;
-	background-color: #7fb48f;
 	margin-top: 20px;
-
 	img {
 		width: 100%;
 		height: auto;
@@ -540,7 +491,7 @@ textarea {
 	margin: 15px;
 	height: 750px;
 	width: 750px;
-	border: 2px solid black;
+	border: 2px solid rgb(219, 213, 213);
 }
 
 /* Popup leaflet map mise en page */
@@ -550,6 +501,24 @@ textarea {
 	color: #3c6255;
 	background-color: #f1f1f1;
 	text-align: center;
+	position: relative;
+	/* Favorites ICON */
+	.favori-lac {
+		grid-row: 1;
+		grid-column: 3;
+		height: 20px;
+		padding: 2px;
+		position: absolute;
+		left: -5px;
+		top: 5px;
+	} /* Images sizes leaflet map pop up */
+	.imgPopUpLeaftlet {
+		height: 120px;
+		width: 120px;
+		border-radius: 5%;
+		position: relative;
+		right: 10px;
+	}
 }
 
 .leaflet-popup-content {
@@ -558,7 +527,7 @@ textarea {
 	justify-content: space-between;
 	align-items: center;
 	font-family: "Roboto Mono", monospace;
-
+	position: relative;
 	h3 {
 		font-weight: 700;
 		color: #3c6255;
@@ -566,14 +535,15 @@ textarea {
 	}
 }
 
-/* Images sizes leaflet map pop up */
-
-.imgPopUpLeaftlet {
-	height: 120px;
-	width: 120px;
-	border-radius: 5%;
-	position: relative;
-	right: 10px;
+/* IMG Favorite pop up leaflet */
+.favori-lac {
+	grid-row: 1;
+	grid-column: 3;
+	height: 20px;
+	padding: 2px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
 }
 
 /* Related to my map (overlay when you click on a specific button of the map) */
@@ -588,30 +558,32 @@ textarea {
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     animation: slideIn 0.8s ease;
     z-index: 1000;
-}.overlay-content {
-	padding: 20px;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	& > p,
-	h1 {
-		text-align: center;
-	}
-	.overlay-imgs {
-		height: 300px;
-		width: 300px;
-		border-radius: 5%;
-	}
-	.favori-popup {
-		position: absolute;
-		left: 10px;
-		top: 10px;
-		height: 30px;
-		
-		img{
-		box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-	}
+}
+
+@mixin overlay-content-layout {
+	.overlay-content {
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 20px;
+		p,h1 {
+			text-align: center;
+		}
+		.overlay-imgs {
+			height: 300px;
+			width: 300px;
+			border-radius: 5%;
+		}
+		.favori-popup {
+			position: absolute;
+			left: 10px;
+			top: 10px;
+			height: 30px;
+			img{
+			box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+		}
+		}
 	}
 }
 
@@ -628,14 +600,17 @@ textarea {
 
 #overlay1 {
 	@include overlay-layout;
+	@include overlay-content-layout;
 }
 
 #overlay2 {
 	@include overlay-layout;
+	@include overlay-content-layout;
 }
 
 #overlay3 {
 	@include overlay-layout;
+	@include overlay-content-layout;
 }
 
 .hidden {

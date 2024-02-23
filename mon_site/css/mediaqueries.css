@@ -1,21 +1,22 @@
 /* Media Queries Carte */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
     #map {
-        height: 350px;
-        width: 350px;
+        height: 430px;
     }
     #overlay1 {
-        height: 80%;
         width: 300px;
     }
     #overlay2 {
-        height: 80%;
         width: 300px;
     }
     #overlay3 {
-        height: 80%;
         width: 300px;
+    }
+    .overlay-content {
+        gap: 0px;
+        transform: scale(0.8);
+        padding: 10px;
     }
 }
 
