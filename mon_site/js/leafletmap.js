@@ -53,21 +53,17 @@ L.marker([43.537343, 1.514988], { icon: redPin })
 //! OVERLAYS
 
 // Je crée une fonction générale pour mes overlays en donnant un parametre et  mes instructions
-
-// Je veux que ma function récupère les IDS de mes overlays côté HTML
 function openOverlay(overlayIDs) {
     let overlay = document.getElementById(overlayIDs); // IDs overlay dans mon HTML
-    overlay.classList.toggle("hidden"); // Bouton ON/OFF de ma classe hidden
-    overlay.style.right = overlay.style.right === "0%" ? "-100%" : "0%"; // J'ajoute la transition fluide de mon css à ma fonction
+    overlay.classList.toggle("hidden"); // Bouton ON/OFF de ma classe hidden donc l'overlay devient visible
+    overlay.style.right = overlay.style.right = "0%"; // Je passe mon overlay de sa posotion initiale -100% à 0%
 }
 
 // Je créé une fonction unique pour chaque overlay en utilisant ma fonction générale "OpenOverlay" et je lui spécifie quel overlay ouvrir.
-// Je récupère l'ID de mon overlay et "onclick", elle s'active.
 function openOverlay1() {
-    openOverlay("overlay1");
+    openOverlay("overlay1"); // Ouvre l'ovarlay de l'ID overlay1 (onclick)
 }
 
-//! Idem pour l'overlay deux, j'applique mes instructions de ma fonction Openoverlay.
 function openOverlay2() {
     openOverlay("overlay2");
 }
@@ -76,16 +72,15 @@ function openOverlay3() {
     openOverlay("overlay3");
 }
 
-// Je crée une fonction pour tous mes overlays en donnant deux parametres (Un qui va récuperer les ids des boutons, pour l'id des overlays) et mes instructions
+// Fonction fermer mes overlays ; deux parametres : Un qui recupère le bouton, et l'autre qui récupère les overlays
 // Ici je veux que ma function récupère les IDS de mes overlays
 function closeOverlay(closeBtnSelector, overlaySelector) {
     const closeOverlay = document.querySelector(closeBtnSelector); // Premier parametre => les ids de mes boutons
-    const overlay = document.querySelector(overlaySelector); // Deuxieme parametre => les ids de mes overlay )
+    const overlay = document.querySelector(overlaySelector); // Deuxieme parametre => les ids de mes overlay
 
     // Je veux qu'au clic du bouton de fermeture, on ajoute à mes overlay la classe hidden
     closeOverlay.addEventListener("click", () => {
         overlay.classList.add("hidden");
-        overlay.style.right = overlay.style.right === "0%" ? "-100%" : "0%";
     });
 }
 // j'appel ma function et je selectionne le bouton de l'overlay et l'ID de la div que je veux remettre en hidden.

@@ -517,7 +517,8 @@ textarea {
 }
 
 /* Related to my map (overlay when you click on a specific button of the map) */
-/* Defines the steps that make up the sequence of a CSS animation / finer control of my animation */ /* sliding smoothly */
+/* Defines the steps that make up the sequence of a CSS animation /* sliding smoothly */
+/* Annimation progressive et fluide hors écran jusqu'a sa position initiale */
 @keyframes slideIn {
   0% {
     right: -100%;
@@ -528,12 +529,14 @@ textarea {
 }
 #overlay1 {
   position: fixed;
+  /* Positionne l'overlay hors de l'écran sur le côté droit */
   right: -100%;
   top: 0px;
   height: 100%;
   width: 500px;
   background-color: #f0eeee;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  /* J'applique une animation à mon OVERLAY  */
   animation: slideIn 0.8s ease;
   z-index: 1000;
 }
@@ -564,12 +567,14 @@ textarea {
 
 #overlay2 {
   position: fixed;
+  /* Positionne l'overlay hors de l'écran sur le côté droit */
   right: -100%;
   top: 0px;
   height: 100%;
   width: 500px;
   background-color: #f0eeee;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  /* J'applique une animation à mon OVERLAY  */
   animation: slideIn 0.8s ease;
   z-index: 1000;
 }
@@ -600,12 +605,14 @@ textarea {
 
 #overlay3 {
   position: fixed;
+  /* Positionne l'overlay hors de l'écran sur le côté droit */
   right: -100%;
   top: 0px;
   height: 100%;
   width: 500px;
   background-color: #f0eeee;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  /* J'applique une animation à mon OVERLAY  */
   animation: slideIn 0.8s ease;
   z-index: 1000;
 }
