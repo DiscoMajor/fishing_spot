@@ -55,11 +55,11 @@ L.marker([43.537343, 1.514988], { icon: redPin })
 // Je crée une fonction générale pour mes overlays en donnant un parametre et  mes instructions
 function openOverlay(overlayIDs) {
     let overlay = document.getElementById(overlayIDs); // IDs overlay dans mon HTML
-    overlay.classList.toggle("hidden"); // Bouton ON/OFF de ma classe hidden donc l'overlay devient visible
-    overlay.style.right = overlay.style.right = "0%"; // Je passe mon overlay de sa posotion initiale -100% à 0%
+    overlay.classList.toggle("hidden"); // Bouton ON/OFF de ma classe hidden
+    overlay.style.right = overlay.style.right = "0%"; // Overlay passe de -100% à 0%
 }
 
-// Je créé une fonction unique pour chaque overlay en utilisant ma fonction générale "OpenOverlay" et je lui spécifie quel overlay ouvrir.
+// Fonction unique pour chaque overlay :utilisant "OpenOverlay" et spécifie quel overlay ouvrir.
 function openOverlay1() {
     openOverlay("overlay1"); // Ouvre l'ovarlay de l'ID overlay1 (onclick)
 }
