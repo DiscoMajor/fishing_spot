@@ -68,7 +68,6 @@
                 <div class="connexionElement5">
                     <input type="submit" name="ajouter" value="Me connecter" class="bouton-pages" >
                 </div>
-                <div class="connexionElement6"><a href="">Mot de passe oublié ?</a></div>
             </div>
         </form>
 
