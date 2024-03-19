@@ -30,7 +30,7 @@ if(isset($_POST['ajouter'])){
                 echo 'CONNEXION';
                 echo '-------';
 
-                $req = $bdd->prepare('INSERT INTO Utilisateur (mail_utilisateur, mot_de_passe_utilisateur) VALUES (?,?)');
+                $req = $bdd->prepare('INSERT INTO utilisateur (mail_utilisateur, mot_de_passe_utilisateur) VALUES (?,?)');
 
                 //ETAPE 6: Binding de Paramètre
                 $req->bindParam(1,$email,PDO::PARAM_STR);
