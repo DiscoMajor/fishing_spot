@@ -21,12 +21,6 @@ CREATE TABLE Lac(
    PRIMARY KEY(id_lac)
 );
 
-CREATE TABLE Rôle(
-   id_role INT NOT NULL,
-   nom_role VARCHAR(50)  NOT NULL,
-   PRIMARY KEY(id_role)
-);
-
 CREATE TABLE code_postal(
    Id_code_postal INT AUTO_INCREMENT,
    code_postal_utilisateur VARCHAR(50) ,
@@ -67,16 +61,23 @@ CREATE TABLE Carte_Bleue(
    PRIMARY KEY(Id_Carte_Bleue)
 );
 
+CREATE TABLE Rôle(
+   id_role INT AUTO_INCREMENT,
+   nom_role VARCHAR(50)  NOT NULL,
+   PRIMARY KEY(id_role)
+);
+
 CREATE TABLE Utilisateur(
    id_utilisateur INT AUTO_INCREMENT,
    pseudo_utilisateur VARCHAR(50) ,
    mail_utilisateur VARCHAR(50) ,
    telephone_utilisateur VARCHAR(50) ,
    mot_de_passe_utilisateur VARCHAR(150) ,
-   id_role INT NOT NULL,
+   id_role INT,
    PRIMARY KEY(id_utilisateur),
    FOREIGN KEY(id_role) REFERENCES Rôle(id_role)
 );
+
 
 CREATE TABLE Panier(
    id_panier INT AUTO_INCREMENT,

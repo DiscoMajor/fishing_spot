@@ -30,8 +30,7 @@ if(isset($_POST['ajouter'])){
                 echo 'CONNEXION';
                 echo '-------';
 
-                $req = $bdd->prepare("INSERT INTO utilisateur (mail_utilisateur, mot_de_passe_utilisateur) VALUES (?,?)");
-                // $req = $bdd->prepare("INSERT INTO utilisateur (mail_utilisateur, mot_de_passe_utilisateur,id_role) VALUES (?,?,1)"); une fois que mon ID_role sera fonctionnel dans ma BDD
+                $req = $bdd->prepare("INSERT INTO utilisateur (mail_utilisateur, mot_de_passe_utilisateur) VALUES (?,?)"); // J'ai mis en parametre par default l'id_role sur Workbench
 
                 //ETAPE 6: Binding de Paramètre
                 $req->bindParam(1,$email,PDO::PARAM_STR);

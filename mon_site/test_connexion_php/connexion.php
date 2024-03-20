@@ -13,31 +13,33 @@
         <link rel="icon" type="image/x-icon" href="../mon_site/icones/fs_favicon.png" />
     </head>
 
+
+
     <body>
 
         <div class="banniereHautDePage">
             <div class="titreBannierePages">
-                <h2 class="h2-banniere-pages">CONNEXION</h2>
+                <h2 class="h2-banniere-pages">CREER UN COMPTE</h2>
             </div>
         </div>
 
         <div class="connexionh3">
-            <h3>Se connecter</h3>
+            <h3>Créer un compte</h3>
         </div>
 
-        <form action="recup_donnees.php" method="post">
+        <form action="connexion.php" method="post">
             <div id="connexionBox">
                 <div class="connexionElement1">
                     <label>Adresse mail *</label>
                 </div>
                 <div class="connexionElement2">
-                    <input type="text" placeholder="Entrez votre adresse mail" name="mail" required />
+                    <input type="email" placeholder="Entrez votre adresse mail" name="mail" required />
                 </div>
                 <div class="connexionElement3">
                     <label>Mot de passe *</label>
                 </div>
                 <div class="connexionElement4">
-                    <input type="text" placeholder="Entrez votre mot de passe" name="mdp" minlength="8" maxlength="15" required />
+                    <input type="password" placeholder="Entrez votre mot de passe" name="mdp" minlength="8" maxlength="15" required />
                 </div>
                 <div class="connexionElement5">
                     <input type="submit" name="ajouter" value="Me connecter" class="bouton-pages" >
@@ -45,9 +47,13 @@
             </div>
         </form>
 
+        <?php
+    include("recup_donnees.php");
+    ?>
+
         <div class="banniereHautDePage">
             <div class="titreBannierePages">
-                <h2 class="h2-banniere-pages">CREER UN COMPTE</h2>
+                <h2 class="h2-banniere-pages">CONNEXION</h2>
             </div>
         </div>
 
