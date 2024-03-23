@@ -1,5 +1,4 @@
 <?php
-//Création de ma fonction de nettoyage de donnée
 include("utils.php");
 include("model.php");
 $message = "";
@@ -7,17 +6,18 @@ $message = "";
 if(isset($_POST['envoyer'])){
     echo 'envoyer';
     echo '-------';
-    //ETAPE 2 : je vérifie que mes champs obligatoires ne sont pas vide
+    //Verification champs obligatoires non vide
     if(isset($_POST['nom']) && isset($_POST['mail'])  && isset($_POST['messagePerso']) && !empty($_POST['nom']) && !empty($_POST['mail']) && !empty($_POST['messagePerso'])){
         
-        echo 'isset';
+        echo 'Verification';
         echo '-------';
 
-        //ETAPE 3 : Nettoyage de mes données
+        //Nettoyage de mes données
         $nomForm = sanitize($_POST['nom']);
         $emailForm = sanitize ($_POST['mail']);
         $textForm = sanitize($_POST['messagePerso']);
 
+        //Recuperation des infos formulaire
         getFormulaire($emailForm,$nomForm,$textForm);
         
         $message = "Message bien envoyé";
