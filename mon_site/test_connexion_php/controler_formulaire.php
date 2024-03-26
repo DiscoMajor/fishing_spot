@@ -29,6 +29,8 @@ if(isset($_POST['envoyer'])){
 
 // JE DOIS ME CONNECTER A LA BDD ICI
 // AVEC DES IF/ELSE (regarder tp sur les tasks)
+// avec une foreach
+// et des paragraphes
 
 include ('vue/vue_header.php');
 include ('vue/vue_contact.php');
