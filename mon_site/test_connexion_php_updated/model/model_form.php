@@ -7,7 +7,6 @@ class Formulaire {
     private ?string $mail_form;
     private ?string $nom_form;
     private ?string $message_form;
-
     private ?PDO $data_base;
 
     // getter/setter des mes attributs

@@ -1,1 +1,3 @@
-<?php //ici mettre l'echo de on IF/else du controler_formulaire qui affiche mes données formulaire en HTML ?>
+<?php echo $list;
+
+
