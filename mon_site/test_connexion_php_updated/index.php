@@ -33,7 +33,7 @@ if(isset($_POST['envoyer'])){
 
 // JE DOIS ME CONNECTER A LA BDD ICI
 // AVEC DES IF/ELSE (regarder tp sur les tasks)
-// avec une foreach
+// avec une foreach (voir exo supergame ou projet task pour faire la liste )
 // et des paragraphes
 
 include ('vue/vue_header.php');

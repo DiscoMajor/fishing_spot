@@ -25,9 +25,9 @@ class Formulaire {
 
     // Function qui récup (SELECT) mon form en BDD en orienté objet
 
-    function infoFormulaire():array|string{
+    public function infoFormulaire():array|string{
         try {
-            $req = $this->getDataBase()->prepare('SELECT formulaire_contact.nom_famille_formulaire, formulaire_contact.mail_formulaire , formulaire_contact.message_formulaire FROM formulaire_contact');
+            $req = $this->getDataBase()->prepare('SELECT * FROM formulaire_contact');
 
              //ETAPE 1.3 : Exécuter la requête
             $req->execute();
@@ -36,7 +36,7 @@ class Formulaire {
             $data = $req->fetchAll(PDO::FETCH_ASSOC);
     
             //ETAPE 1.5 : je renvoie $data à l'extérieur de ma fonction
-            return print_r($data);
+            return ($data);
 
         }catch(Exception $error){
             return $error->getMessage();
