@@ -16,12 +16,16 @@ if(isset($_POST['envoyer'])){
         $nomForm = sanitize($_POST['nom']);
         $emailForm = sanitize ($_POST['mail']);
         $textForm = sanitize($_POST['messagePerso']);
+        
 
-        //Recuperation des infos formulaire
+        if(filter_var($emailForm, FILTER_VALIDATE_EMAIL) ){
+        
+            //Recuperation des infos formulaire
         getFormulaire($emailForm,$nomForm,$textForm);
         
         $message = "Message bien envoyé";
-
+        }
+        
     }else{
         $message = "Message non envoyé, veuillez remplir tous les champs.";
     }
