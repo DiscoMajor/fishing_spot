@@ -16,6 +16,7 @@ if(isset($_POST['envoyer'])){
         $nomForm = sanitize($_POST['nom']);
         $emailForm = sanitize ($_POST['mail']);
         $textForm = sanitize($_POST['messagePerso']);
+        $submitButton = sanitize($_POST['envoyer']);
         
 
         if(filter_var($emailForm, FILTER_VALIDATE_EMAIL) ){

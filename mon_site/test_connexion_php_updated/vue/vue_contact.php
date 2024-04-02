@@ -10,11 +10,11 @@
             <div id="containerContactGrid">
                 <div id="contactBoxFlex">
                     <div id="contactElement1">
-                        <label for="text">Nom *</label>
+                        <label>Nom *</label>
                         <input type="text" placeholder="Votre nom" name="nom" />
                     </div>
                     <div id="contactElement2">
-                        <label for="email">E-mail *</label>
+                        <label>E-mail *</label>
                         <input type="email" placeholder="Votre adresse mail" name="mail" />
                     </div>
                     <div id="contactElement3">
@@ -24,7 +24,7 @@
                             <input class="bouton-pages" type="submit" name ="envoyer" value="Envoyer" />
                         </div>
 
-                        <p> <?php echo $message ?> </p>
+                        <p> <?= $message ?> </p>
 
                     </div>
                 </div>
