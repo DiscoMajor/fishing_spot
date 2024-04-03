@@ -25,10 +25,10 @@ if(isset($_POST['envoyer'])){
         //On va donner à notre objet l'objet de connexion PDO ainsi que les données à chercher
             $formulaireText->setDataBase(connect())->setMessageForm($textForm)->setMailForm($emailForm)->setNomForm($nomForm);
 
-        //Je regarde si il n'y a pas de doublons du message envoyé en BDD
+        //Je regarde si il n'y a pas de doublons du mail envoyé en BDD
             $data = $formulaireText->checkDuplicate();
 
-        //Si le message n'est pas déjà en BBD alors :
+        //Si le mail n'est pas déjà en BBD alors :
             if(empty($data)){
                 $formulaireText->getFormulaire($textForm,$emailForm,$nomForm);
                 $message = "Votre message a bien été envoyé 🐟✨";

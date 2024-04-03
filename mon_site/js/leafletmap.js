@@ -1,7 +1,7 @@
 // J'initialise ma carte avec coordonnées géographique pour l'afficher sur le site à un endroit précis (Alentours de Toulouse) et je précise que je veux un zoom de 12.
 let map = L.map("map").setView([43.56578382655103, 1.3970038497246386], 12);
 
-// Tuile personnalisée pour ma carte
+// Visuel personnalisé pour ma carte
 let tiles = L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
     attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
