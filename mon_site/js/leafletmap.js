@@ -102,11 +102,10 @@ closeOverlay("#close-overlay3", "#overlay3");
 // ! Pour ouvrir l'overlay avec le bouton
 // openBtn.addEventListener('click',()=>{
 // overlayHtml.classList.toggle("hidden"); // Bouton ON/OFF de ma classe hidden //! .remove hidden à try si ca marche pas.
-// overlayHtml.style.right = overlay.style.right === "0%" ? "-100%" : "0%"; // J'ajoute la transition fluide de mon css à ma fonction
+// overlay.style.right = "0%"; //
 // });
 
 // //! Pour fermer l'overlay avec le bouton
 // closeBtn.addEventListener("click", () => {
-//     overlayHtml.classList.toggle("hidden"); // Bouton ON/OFF de ma classe hidden //! .add hidden à try si ca marche pas
-//     overlayHtml.style.right = overlay.style.right === "0%" ? "-100%" : "0%"; // J'ajoute la transition fluide de mon css à ma fonction.
+//     overlayHtml.classList.add("hidden"); // Bouton ON/OFF de ma classe hidden //! .add hidden à try si ca marche pas
 // });
