@@ -553,6 +553,7 @@ textarea {
 	/* Positionne l'overlay hors de l'écran sur le côté droit */
     right: -100%;
     top: 0px;
+	overflow: auto;
     height: 100%;
     width: 500px;
     background-color: #f0eeee;
@@ -564,6 +565,7 @@ textarea {
 
 @mixin overlay-content-layout {
 	.overlay-content {
+		
 		padding: 20px;
 		display: flex;
 		align-items: center;

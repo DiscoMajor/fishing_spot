@@ -27,7 +27,7 @@ L.marker([43.526107, 1.285239], { icon: redPin })
         <div class='textPopUpLeaflet'> 
         <h3>Petit Lac De Bidot</h3>
         <p>📍 Fonsorbes</p> 
-        <button onclick='openOverlay1()' class='bouton-pages' type='submit'>En savoir plus</button> </div>`
+        <button id="btn-overlay1" onclick='openOverlay(this.id)' class='bouton-pages' type='submit'>En savoir plus</button> </div>`
     );
 
 L.marker([43.584188, 1.358444], { icon: redPin })
@@ -37,7 +37,7 @@ L.marker([43.584188, 1.358444], { icon: redPin })
         <div class='textPopUpLeaflet'>
         <h3>Lac du vieux Pigeonnier</h3> 
         <p>📍 Tournefeuille</p>
-        <button onclick='openOverlay2()' class='bouton-pages' type='submit'>En savoir plus</button>
+        <button id="btn-overlay2" onclick='openOverlay(this.id)' class='bouton-pages' type='submit'>En savoir plus</button>
         </div>`
     );
 
@@ -47,29 +47,17 @@ L.marker([43.537343, 1.514988], { icon: redPin })
         `<div><img class='imgPopUpLeaftlet' src='./img/lac_de_labege.png'> <img class='favori-lac' src='../mon_site/icones/favoris_ico.svg' alt='favoris icon' /></div> 
         <div class='textPopUpLeaflet'> <h3>Lac de Labège</h3>
         <p>📍 Labège</p> 
-        <button onclick='openOverlay3()' class='bouton-pages' type='submit'>En savoir plus</button> </div>`
+        <button id="btn-overlay3" onclick='openOverlay(this.id)' class='bouton-pages' type='submit'>En savoir plus</button> </div>`
     );
 
 //! OVERLAYS
 
 // Fonction Ouverture Overlay
-function openOverlay(overlayIDs) {
+function openOverlay(buttonIDs) {
+    let overlayIDs = buttonIDs.replace("btn-", "");
     let overlay = document.getElementById(overlayIDs); // ID Overlay du HTML
     overlay.classList.toggle("hidden"); // Bouton ON/OFF de ma classe hidden
     overlay.style.right = "0%"; // Overlay passe de -100% à 0%
-}
-
-// Fonction spécifie quel overlay ouvrir.
-function openOverlay1() {
-    openOverlay("overlay1"); // Ouvre l'overlay de l'ID overlay1 (onclick)
-}
-
-function openOverlay2() {
-    openOverlay("overlay2");
-}
-
-function openOverlay3() {
-    openOverlay("overlay3");
 }
 
 // Fonction fermer mes overlays ; deux parametres : Un qui recupère le bouton, et l'autre qui récupère les overlays
@@ -87,25 +75,3 @@ function closeOverlay(closeBtnSelector, overlaySelector) {
 closeOverlay("#close-overlay1", "#overlay1");
 closeOverlay("#close-overlay2", "#overlay2");
 closeOverlay("#close-overlay3", "#overlay3");
-
-// TODO Il me faut mon bouton pour ouvrir déjà a recuperer (lui donner une classe openBtnpopup dans mon JS) (Virer le onclick sur mon JS en haut et tout refaire propre.)
-// let openBtn = document.querySelector(".openBtnPopup")
-// TODO Il me faut recuperer la classe de mes overlays (donner une classe aussi overlay-popup par exemple et virer l'ID déjà en place dans mon HTML)
-// let overlayHtml = document.querySelector(".overlay-popup");
-// TODO Il me faut recuperer mon bouton fermeture présent dans mon HTML closeBtn (a changer en clase)
-// let closeBtn = document.querySelector(".closeBtnPopup")
-// ! J'ai plusieurs overlay, donc je dois mettre selectorAll ? Et j'ai plusieurs boutons donc je dois aussi mettre selectorAll ?
-// ! Il n'y aura pas de conflits ?
-
-// Modifier dans mon CSS avec le nouveau nom de ma classe pour les popups.
-
-// ! Pour ouvrir l'overlay avec le bouton
-// openBtn.addEventListener('click',()=>{
-// overlayHtml.classList.toggle("hidden"); // Bouton ON/OFF de ma classe hidden //! .remove hidden à try si ca marche pas.
-// overlay.style.right = "0%"; //
-// });
-
-// //! Pour fermer l'overlay avec le bouton
-// closeBtn.addEventListener("click", () => {
-//     overlayHtml.classList.add("hidden"); // Bouton ON/OFF de ma classe hidden //! .add hidden à try si ca marche pas
-// });

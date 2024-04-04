@@ -518,7 +518,7 @@ textarea {
 
 /* Related to my map (overlay when you click on a specific button of the map) */
 /* Defines the steps that make up the sequence of a CSS animation /* sliding smoothly */
-/* Annimation progressive et fluide hors écran jusqu'a sa position initiale */
+/* Animation progressive et fluide hors écran jusqu'a sa position initiale */
 @keyframes slideIn {
   0% {
     right: -100%;
@@ -532,6 +532,7 @@ textarea {
   /* Positionne l'overlay hors de l'écran sur le côté droit */
   right: -100%;
   top: 0px;
+  overflow: auto;
   height: 100%;
   width: 500px;
   background-color: #f0eeee;
@@ -570,6 +571,7 @@ textarea {
   /* Positionne l'overlay hors de l'écran sur le côté droit */
   right: -100%;
   top: 0px;
+  overflow: auto;
   height: 100%;
   width: 500px;
   background-color: #f0eeee;
@@ -608,6 +610,7 @@ textarea {
   /* Positionne l'overlay hors de l'écran sur le côté droit */
   right: -100%;
   top: 0px;
+  overflow: auto;
   height: 100%;
   width: 500px;
   background-color: #f0eeee;
