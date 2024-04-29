@@ -53,18 +53,21 @@ L.marker([43.537343, 1.514988], { icon: redPin })
 //! OVERLAYS
 
 // Fonction Ouverture Overlay
-function openOverlay(buttonIDs) {
-    let overlayIDs = buttonIDs.replace("btn-", "");
-    let overlay = document.getElementById(overlayIDs); // ID Overlay du HTML
+
+// Paramètre = Ids de mes boutons
+function openOverlay(buttonIds) {
+    // extrait l'identifiant de l'overlay à partir de l'identifiant du bouton.
+    let overlayIds = buttonIds.replace("btn-", "");
+    let overlay = document.getElementById(overlayIds); // ID Overlay du HTML
     overlay.classList.toggle("hidden"); // Bouton ON/OFF de ma classe hidden
     overlay.style.right = "0%"; // Overlay passe de -100% à 0%
 }
 
 // Fonction fermer mes overlays ; deux parametres : Un qui recupère le bouton, et l'autre qui récupère les overlays
-// Ici je veux que ma function récupère les IDS de mes overlays
+// Ici je veux que ma function récupère les Ids de mes overlays
 function closeOverlay(closeBtnSelector, overlaySelector) {
-    const closeOverlay = document.querySelector(closeBtnSelector); // Premier parametre => les ids de mes boutons
-    const overlay = document.querySelector(overlaySelector); // Deuxieme parametre => les ids de mes overlay
+    const closeOverlay = document.querySelector(closeBtnSelector); // Premier parametre => les Ids de mes boutons
+    const overlay = document.querySelector(overlaySelector); // Deuxieme parametre => les Ids de mes overlay
 
     // Je veux qu'au clic du bouton de fermeture, on ajoute à mes overlay la classe hidden
     closeOverlay.addEventListener("click", () => {
